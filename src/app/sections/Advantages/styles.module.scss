@@ -1,0 +1,62 @@
+.advantages {
+  background-color: #006837;
+  padding: 4rem 0;
+
+  &__pics {
+    position: relative;
+    min-height: 40rem;
+    flex: 1 0 50%;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__heading {
+    flex: 1 0 50%;
+
+    h1 {
+      line-height: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__preTitle {
+    font-size: 2.4rem;
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+
+    span {
+      color: #2dc26b;
+    }
+  }
+
+  &__listGroup {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (width < 990px) {
+  .advantages {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__heading {
+      order: 2;
+      margin-top: 3rem;
+    }
+
+    &__pics {
+      order: 1;
+    }
+  }
+}

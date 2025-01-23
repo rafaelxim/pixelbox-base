@@ -1,5 +1,5 @@
-import Button from "../Button";
-import Content from "../Content";
+import Button from "../../components/Button";
+import Content from "../../components/Content";
 import styles from "./styles.module.scss";
 
 import Image from "next/image";

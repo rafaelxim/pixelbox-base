@@ -1,0 +1,21 @@
+.wrapper {
+  background-color: #fbfbfd;
+  padding: 5rem 0;
+}
+
+.subtitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #636363;
+  margin-bottom: 2rem;
+
+  &__icon {
+    font-size: 3.2rem;
+    color: #e03e2d;
+    margin-right: 1rem;
+  }
+}
+
+.box {
+  margin-top: 2rem;
+}
