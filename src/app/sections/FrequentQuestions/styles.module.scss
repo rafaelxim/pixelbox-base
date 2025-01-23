@@ -1,0 +1,38 @@
+.faq {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #006837;
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    cursor: pointer;
+
+    span {
+      color: #c4d641;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+  }
+
+  &__question {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  &__container {
+    max-width: 65rem;
+    margin: 4rem auto;
+  }
+
+  &__answer {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}

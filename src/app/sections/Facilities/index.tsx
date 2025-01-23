@@ -1,3 +1,4 @@
+import Button from "@/app/components/Button";
 import Content from "@/app/components/Content";
 import Title from "@/app/components/Typography/Title";
 import Image from "next/image";
@@ -63,6 +64,7 @@ const Facilities = () => {
             </p>
           </div>
         </div>
+        <Button>Quero um orçamento</Button>
       </Content>
     </div>
   );
