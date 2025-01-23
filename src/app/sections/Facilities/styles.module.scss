@@ -1,11 +1,11 @@
-.pillars {
+.facilities {
   background-color: #f3f3f3;
   padding: 5rem 0;
   text-align: center;
   color: #000;
 
   h1 {
-    line-height: 2rem;
+    line-height: 1.9rem;
   }
 
   &__preTitle {
@@ -43,6 +43,10 @@
   @media (width < 990px) {
     &__cardsContainer {
       grid-template-columns: 1fr;
+    }
+
+    h1 {
+      line-height: 3.4rem;
     }
   }
 }

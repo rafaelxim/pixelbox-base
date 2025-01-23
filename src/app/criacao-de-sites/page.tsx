@@ -1,5 +1,6 @@
 import Advantages from "../sections/Advantages";
 import Benefits from "../sections/Benefits";
+import Facilities from "../sections/Facilities";
 import Header from "../sections/Header";
 import Pains from "../sections/Pains";
 import Pillars from "../sections/Pillars";
@@ -18,6 +19,7 @@ const Home = () => {
       <Testimonials />
       <Strategy />
       <Pillars />
+      <Facilities />
     </div>
   );
 };
