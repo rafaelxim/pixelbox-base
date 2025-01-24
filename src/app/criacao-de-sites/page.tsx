@@ -1,6 +1,7 @@
 import Advantages from "../sections/Advantages";
 import Benefits from "../sections/Benefits";
 import Facilities from "../sections/Facilities";
+import Footer from "../sections/Footer";
 import Form from "../sections/Form";
 import FrequentQuestions from "../sections/FrequentQuestions";
 import Header from "../sections/Header";
@@ -24,6 +25,7 @@ const Home = () => {
       <Facilities />
       <FrequentQuestions />
       <Form />
+      <Footer />
     </div>
   );
 };
