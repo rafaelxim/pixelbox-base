@@ -1,5 +1,6 @@
+@import "../../variables";
+
 .benefits {
-  background-color: #313131;
   padding: 2rem 0;
 
   h1 {
@@ -9,6 +10,7 @@
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 2.5rem;
+    color: $secondary-color;
   }
   &__row {
     display: flex;
@@ -42,6 +44,7 @@
   &__description {
     font-size: 1.6rem;
     margin: 2rem 0;
+    color: $tertiary-color;
   }
 }
 

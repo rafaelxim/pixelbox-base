@@ -1,7 +1,8 @@
+@import "../../variables";
+
 .form {
   padding: 4rem 0;
-  background-color: #fbfbfb;
-  color: #0f0a0f;
+  color: $secondary-color;
   text-align: center;
 
   h1 {
@@ -22,6 +23,7 @@
 
   &__subtitle {
     font-size: 1.6rem;
+    color: $tertiary-color;
   }
 
   &__pic {
@@ -31,15 +33,15 @@
   &__fields {
     text-align: left;
     font-size: 1.6rem;
-    color: #636363;
+    color: $tertiary-color;
 
     input {
       background-color: transparent;
-      color: #0f0a0f;
+      color: #fff;
       width: 100%;
-      border: 1px solid #0a0e0a;
+      border: 1px solid #fff;
       border-radius: 7px;
-      padding: 0.8rem 0;
+      padding: 0.8rem 1rem;
     }
 
     label {
@@ -49,11 +51,11 @@
 
     textarea {
       background-color: transparent;
-      color: #0f0a0f;
+      color: #fff;
       width: 100%;
-      border: 1px solid #0a0e0a;
+      border: 1px solid #fff;
       border-radius: 7px;
-      padding: 0.8rem 0;
+      padding: 0.8rem 1rem;
     }
   }
 

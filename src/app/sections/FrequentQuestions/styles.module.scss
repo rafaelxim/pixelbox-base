@@ -1,7 +1,11 @@
+@import "../../variables";
+
 .faq {
   padding: 4rem 0;
   text-align: center;
-  background-color: #006837;
+  border-radius: 20px;
+  background: $bg-color2;
+  margin: 0 4rem;
 
   &__title {
     font-size: 4rem;
@@ -13,9 +17,10 @@
     justify-content: space-between;
     margin-top: 1.5rem;
     cursor: pointer;
+    color: $tertiary-color;
 
     span {
-      color: #c4d641;
+      color: $secondary-color;
       font-size: 2.4rem;
       font-weight: 700;
     }
@@ -34,5 +39,9 @@
   &__answer {
     font-size: 1.6rem;
     text-align: left;
+  }
+
+  @media (width < 768px) {
+    margin: 0;
   }
 }

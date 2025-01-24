@@ -1,9 +1,17 @@
+@import "../../variables";
+
 .footer {
-  background-color: #006837;
+  background-color: $bg-color2;
   padding: 2rem 0;
 
   &__text {
     text-align: center;
     font-size: 1.6rem;
+    color: $tertiary-color;
+
+    span {
+      font-weight: 700;
+      text-decoration: underline;
+    }
   }
 }

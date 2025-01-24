@@ -1,17 +1,21 @@
+@import "../../variables";
+
 .portfolio {
-  background-color: #fdfdfd;
+  background-color: $bg-color2;
   padding: 4rem 0;
+  border-radius: 20px;
+  margin: 0 4rem;
 
   &__preTitle {
     font-size: 2.4rem;
     font-weight: 400;
-    color: #0d0d0d;
+    color: $secondary-color;
   }
 
   &__item {
-    background-color: #e8e8e8;
-    padding: 1rem;
-    border-radius: 3px;
+    background-color: $bg-color1;
+    padding: 2rem;
+    border-radius: 10px;
     position: relative;
     min-height: 20rem;
   }
@@ -39,6 +43,7 @@
 
 @media (width < 768px) {
   .portfolio {
+    margin: 0;
     &__grid {
       grid-template-columns: 1fr;
     }
