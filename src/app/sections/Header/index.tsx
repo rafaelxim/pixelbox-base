@@ -20,9 +20,9 @@ const Header = () => {
               Criação de <span>Sites Profissionais</span>
             </h1>
             <div className={styles.heading__description}>
-              Site de alto desempenho e personalizado em 10 dias. Mais
-              visibilidade e credibiliadade para sua empresa. Fale com um
-              especialista
+              Tenha um site profissional e exclusivo em até 10 dias. Impulsione
+              a visibilidade e a confiança da sua marca. Fale agora com um
+              especialista!
             </div>
             <Button>Solicite um orçamento</Button>
           </div>

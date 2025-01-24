@@ -14,50 +14,50 @@ const Pillars = () => {
             <div className={styles.pillars__cardImg}>
               <Image
                 alt="criaçao de sites"
-                src="/images/icones86.png"
+                src="/icons/website.svg"
                 fill
                 objectFit="contain"
               />
             </div>
             <h3 className={styles.pillars__cardTitle}>Criação de Sites</h3>
             <p className={styles.pillars__cardText}>
-              Entregamos seu site pronto, personalizado e configurado. Um
-              website estratégico e inteligente com técnicas de SEO (otimizado
-              para buscadores) e conteúdo para ter uma alta conversão.
+              Desenvolvemos sites personalizados, prontos e totalmente
+              configurados. Um site estratégico, otimizado com técnicas de SEO
+              (para buscadores) e conteúdo voltado para alta conversão.
             </p>
           </div>
 
           <div className={styles.pillars__card}>
             <div className={styles.pillars__cardImg}>
               <Image
-                alt="criaçao de sites"
-                src="/images/icones86.png"
+                alt="estratégia"
+                src="/icons/strategy.svg"
                 fill
                 objectFit="contain"
               />
             </div>
-            <h3 className={styles.pillars__cardTitle}>Criação de Sites</h3>
+            <h3 className={styles.pillars__cardTitle}>Estratégia Digital</h3>
             <p className={styles.pillars__cardText}>
-              Entregamos seu site pronto, personalizado e configurado. Um
-              website estratégico e inteligente com técnicas de SEO (otimizado
-              para buscadores) e conteúdo para ter uma alta conversão.
+              Tudo começa com uma boa estratégia. Criamos funis de vendas
+              alinhados à jornada do cliente, garantindo um marketing eficiente
+              que gera resultados reais e vendas consistentes.
             </p>
           </div>
 
           <div className={styles.pillars__card}>
             <div className={styles.pillars__cardImg}>
               <Image
-                alt="criaçao de sites"
-                src="/images/icones86.png"
+                alt="trafego"
+                src="/icons/chart.svg"
                 fill
                 objectFit="contain"
               />
             </div>
-            <h3 className={styles.pillars__cardTitle}>Criação de Sites</h3>
+            <h3 className={styles.pillars__cardTitle}>Tráfego</h3>
             <p className={styles.pillars__cardText}>
-              Entregamos seu site pronto, personalizado e configurado. Um
-              website estratégico e inteligente com técnicas de SEO (otimizado
-              para buscadores) e conteúdo para ter uma alta conversão.
+              Trabalhamos com Google Meu Negócio e redes sociais de forma
+              orgânica, além de potencializar os resultados com Google Ads e
+              Meta Ads, sempre com estratégias adaptadas à sua empresa.
             </p>
           </div>
         </div>

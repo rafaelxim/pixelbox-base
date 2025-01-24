@@ -25,34 +25,29 @@ const Advantages = () => {
                   <span>√</span> Atendimento próximo e humanizado
                 </div>
                 <div className={styles.advantages__item}>
-                  <span>√</span> Atendimento próximo e humanizado
+                  <span>√</span> Conhecimento profundo sobre cada cliente
                 </div>
                 <div className={styles.advantages__item}>
-                  <span>√</span> Atendimento próximo e humanizado
+                  <span>√</span> Método exclusivo e comprovado
                 </div>
                 <div className={styles.advantages__item}>
-                  <span>√</span> Atendimento próximo e humanizado
+                  <span>√</span> Especialistas em desenvolvimento
                 </div>
               </div>
             </div>
 
             <div className={styles.advantages__listGroup}>
               <h2 className={styles.advantages__subtitle}>
-                Os diferenciais que fizeram nossa empresa de 10 anos ser um
-                grande sucesso são:
+                Quem nos contrata afirma que vale a pena porque isso
+                proporciona:
               </h2>
               <div className={styles.advantages__list}>
                 <div className={styles.advantages__item}>
-                  <span>√</span> Atendimento próximo e humanizado
+                  <span>√</span> Resultados superiores
                 </div>
                 <div className={styles.advantages__item}>
-                  <span>√</span> Atendimento próximo e humanizado
-                </div>
-                <div className={styles.advantages__item}>
-                  <span>√</span> Atendimento próximo e humanizado
-                </div>
-                <div className={styles.advantages__item}>
-                  <span>√</span> Atendimento próximo e humanizado
+                  <span>√</span> Suporte de uma equipe parceira e sempre
+                  disponível
                 </div>
               </div>
             </div>

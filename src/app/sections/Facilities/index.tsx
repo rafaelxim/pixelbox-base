@@ -17,16 +17,15 @@ const Facilities = () => {
             <div className={styles.facilities__cardImg}>
               <Image
                 alt="criaçao de sites"
-                src="/images/icones86.png"
+                src="/icons/responsivo.svg"
                 fill
                 objectFit="contain"
               />
             </div>
-            <h3 className={styles.facilities__cardTitle}>Criação de Sites</h3>
+            <h3 className={styles.facilities__cardTitle}>Site Responsivo</h3>
             <p className={styles.facilities__cardText}>
-              Entregamos seu site pronto, personalizado e configurado. Um
-              website estratégico e inteligente com técnicas de SEO (otimizado
-              para buscadores) e conteúdo para ter uma alta conversão.
+              Criamos sites que se ajustam perfeitamente a computadores, tablets
+              e smartphones, garantindo a melhor experiência para o usuário.
             </p>
           </div>
 
@@ -34,16 +33,15 @@ const Facilities = () => {
             <div className={styles.facilities__cardImg}>
               <Image
                 alt="criaçao de sites"
-                src="/images/icones86.png"
+                src="/icons/google.svg"
                 fill
                 objectFit="contain"
               />
             </div>
-            <h3 className={styles.facilities__cardTitle}>Criação de Sites</h3>
+            <h3 className={styles.facilities__cardTitle}>SEO otimizado</h3>
             <p className={styles.facilities__cardText}>
-              Entregamos seu site pronto, personalizado e configurado. Um
-              website estratégico e inteligente com técnicas de SEO (otimizado
-              para buscadores) e conteúdo para ter uma alta conversão.
+              Desenvolvemos sites com técnicas de SEO avançadas para assegurar
+              um excelente posicionamento nos motores de busca.
             </p>
           </div>
 
@@ -51,16 +49,70 @@ const Facilities = () => {
             <div className={styles.facilities__cardImg}>
               <Image
                 alt="criaçao de sites"
-                src="/images/icones86.png"
+                src="/icons/layout.svg"
                 fill
                 objectFit="contain"
               />
             </div>
-            <h3 className={styles.facilities__cardTitle}>Criação de Sites</h3>
+            <h3 className={styles.facilities__cardTitle}>Layout sob medida</h3>
             <p className={styles.facilities__cardText}>
-              Entregamos seu site pronto, personalizado e configurado. Um
-              website estratégico e inteligente com técnicas de SEO (otimizado
-              para buscadores) e conteúdo para ter uma alta conversão.
+              Elaboramos o design do site alinhado à identidade visual da sua
+              marca, pensando em cada detalhe.
+            </p>
+          </div>
+
+          <div className={styles.facilities__card}>
+            <div className={styles.facilities__cardImg}>
+              <Image
+                alt="criaçao de sites"
+                src="/icons/atendimento.svg"
+                fill
+                objectFit="contain"
+              />
+            </div>
+            <h3 className={styles.facilities__cardTitle}>
+              Atendimento próximo
+            </h3>
+            <p className={styles.facilities__cardText}>
+              Disponibilizamos suporte dedicado via WhatsApp ou videochamada
+              para esclarecer dúvidas e atender necessidades.
+            </p>
+          </div>
+
+          <div className={styles.facilities__card}>
+            <div className={styles.facilities__cardImg}>
+              <Image
+                alt="criaçao de sites"
+                src="/icons/impulsao.svg"
+                fill
+                objectFit="contain"
+              />
+            </div>
+            <h3 className={styles.facilities__cardTitle}>
+              Impulsione seus acessos
+            </h3>
+            <p className={styles.facilities__cardText}>
+              Integramos seu site às principais ferramentas de tráfego pago e
+              orgânico para aumentar a visibilidade da sua empresa.
+            </p>
+          </div>
+
+          <div className={styles.facilities__card}>
+            <div className={styles.facilities__cardImg}>
+              <Image
+                alt="criaçao de sites"
+                src="/icons/manutencao.svg"
+                fill
+                objectFit="contain"
+              />
+            </div>
+            <h3 className={styles.facilities__cardTitle}>
+              Manutenção contínua
+            </h3>
+            <p className={styles.facilities__cardText}>
+              Garantimos que seu site esteja sempre atualizado e funcionando
+              perfeitamente, com suporte técnico disponível para ajustes e
+              melhorias quando necessário.
             </p>
           </div>
         </div>

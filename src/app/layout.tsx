@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.scss";
 
 const poppins = Poppins({
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={poppins.className}>{children}</body>
+      <Script src="/gtag.js" />
     </html>
   );
 }

@@ -20,9 +20,9 @@ const Benefits = () => {
               <p className={styles.benefits__item}>+ Mais vendas</p>
             </div>
             <p className={styles.benefits__description}>
-              Fazemos isso atráves de um site estratégico, aplicando um método
-              próprio para que sua empresa domine a estratégia de atração de
-              clientes pelo meio digital e obtenha resultados imediatos.
+              Fazemos isso por meio de um site estratégico, utilizando um método
+              exclusivo que permite à sua empresa dominar a atração de clientes
+              no meio digital e alcançar resultados imediatos.
             </p>
             <Button>Solicite um orçamento</Button>
           </div>

@@ -11,14 +11,14 @@ const Strategy = () => {
         <Title>É preciso estratégia para vender mais</Title>
 
         <p className={styles.strategy__paragraph}>
-          Não basta só ter um site bonito e profissional. Você precisa de um
-          site estratégico que funcione como uma máquina de atração e conversão
+          Ter um site bonito e profissional não é o suficiente. Você precisa de
+          um site estratégico, que atue como uma máquina de atração e conversão
           de clientes.
         </p>
 
         <p className={styles.strategy__paragraph}>
-          Entre em contato conosco para descobrir como transformar seu site em
-          uma poderosa ferramenta de vendas com uma estratégia eficaz.
+          Fale conosco e descubra como transformar seu site em uma ferramenta
+          poderosa de vendas com uma estratégia eficaz e resultados reais!
         </p>
         <Button>Solicite um orçamento</Button>
       </Content>
