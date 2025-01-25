@@ -102,12 +102,7 @@ const Form = () => {
             )}
           </div>
           <div className={styles.form__pic}>
-            <Image
-              src="/images/contact.avif"
-              alt="contact"
-              objectFit="contain"
-              fill
-            />
+            <Image src="/images/contact.avif" alt="contact" fill />
           </div>
         </div>
       </Content>

@@ -14,68 +14,28 @@ const Portfolio = () => {
 
         <div className={styles.portfolio__grid}>
           <div className={styles.portfolio__item}>
-            <Image
-              src="/images/site1.png"
-              alt="example item"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/site1.png" alt="example item" fill />
           </div>
           <div className={styles.portfolio__item}>
-            <Image
-              src="/images/site2.png"
-              alt="example item"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/site2.png" alt="example item" fill />
           </div>
           <div className={styles.portfolio__item}>
-            <Image
-              src="/images/site3.png"
-              alt="example item"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/site3.png" alt="example item" fill />
           </div>
           <div className={styles.portfolio__item}>
-            <Image
-              src="/images/site4.png"
-              alt="example item"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/site4.png" alt="example item" fill />
           </div>
           <div className={styles.portfolio__item}>
-            <Image
-              src="/images/site5.png"
-              alt="example item"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/site5.png" alt="example item" fill />
           </div>
           <div className={styles.portfolio__item}>
-            <Image
-              src="/images/site6.png"
-              alt="example item"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/site6.png" alt="example item" fill />
           </div>
           <div className={styles.portfolio__item}>
-            <Image
-              src="/images/site7.png"
-              alt="example item"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/site7.png" alt="example item" fill />
           </div>
           <div className={styles.portfolio__item}>
-            <Image
-              src="/images/site8.png"
-              alt="example item"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/images/site8.png" alt="example item" fill />
           </div>
         </div>
       </Content>

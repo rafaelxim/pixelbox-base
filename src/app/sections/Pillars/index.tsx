@@ -12,12 +12,7 @@ const Pillars = () => {
         <div className={styles.pillars__cardsContainer}>
           <div className={styles.pillars__card}>
             <div className={styles.pillars__cardImg}>
-              <Image
-                alt="criaçao de sites"
-                src="/icons/website.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="criaçao de sites" src="/icons/website.svg" fill />
             </div>
             <h3 className={styles.pillars__cardTitle}>Criação de Sites</h3>
             <p className={styles.pillars__cardText}>
@@ -29,12 +24,7 @@ const Pillars = () => {
 
           <div className={styles.pillars__card}>
             <div className={styles.pillars__cardImg}>
-              <Image
-                alt="estratégia"
-                src="/icons/strategy.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="estratégia" src="/icons/strategy.svg" fill />
             </div>
             <h3 className={styles.pillars__cardTitle}>Estratégia Digital</h3>
             <p className={styles.pillars__cardText}>
@@ -46,12 +36,7 @@ const Pillars = () => {
 
           <div className={styles.pillars__card}>
             <div className={styles.pillars__cardImg}>
-              <Image
-                alt="trafego"
-                src="/icons/chart.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="trafego" src="/icons/chart.svg" fill />
             </div>
             <h3 className={styles.pillars__cardTitle}>Tráfego</h3>
             <p className={styles.pillars__cardText}>

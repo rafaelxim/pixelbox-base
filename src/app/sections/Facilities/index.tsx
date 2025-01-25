@@ -15,12 +15,7 @@ const Facilities = () => {
         <div className={styles.facilities__cardsContainer}>
           <div className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
-              <Image
-                alt="criaçao de sites"
-                src="/icons/responsivo.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="criaçao de sites" src="/icons/responsivo.svg" fill />
             </div>
             <h3 className={styles.facilities__cardTitle}>Site Responsivo</h3>
             <p className={styles.facilities__cardText}>
@@ -31,12 +26,7 @@ const Facilities = () => {
 
           <div className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
-              <Image
-                alt="criaçao de sites"
-                src="/icons/google.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="criaçao de sites" src="/icons/google.svg" fill />
             </div>
             <h3 className={styles.facilities__cardTitle}>SEO otimizado</h3>
             <p className={styles.facilities__cardText}>
@@ -47,12 +37,7 @@ const Facilities = () => {
 
           <div className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
-              <Image
-                alt="criaçao de sites"
-                src="/icons/layout.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="criaçao de sites" src="/icons/layout.svg" fill />
             </div>
             <h3 className={styles.facilities__cardTitle}>Layout sob medida</h3>
             <p className={styles.facilities__cardText}>
@@ -63,12 +48,7 @@ const Facilities = () => {
 
           <div className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
-              <Image
-                alt="criaçao de sites"
-                src="/icons/atendimento.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="criaçao de sites" src="/icons/atendimento.svg" fill />
             </div>
             <h3 className={styles.facilities__cardTitle}>
               Atendimento próximo
@@ -81,12 +61,7 @@ const Facilities = () => {
 
           <div className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
-              <Image
-                alt="criaçao de sites"
-                src="/icons/impulsao.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="criaçao de sites" src="/icons/impulsao.svg" fill />
             </div>
             <h3 className={styles.facilities__cardTitle}>
               Impulsione seus acessos
@@ -99,12 +74,7 @@ const Facilities = () => {
 
           <div className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
-              <Image
-                alt="criaçao de sites"
-                src="/icons/manutencao.svg"
-                fill
-                objectFit="contain"
-              />
+              <Image alt="criaçao de sites" src="/icons/manutencao.svg" fill />
             </div>
             <h3 className={styles.facilities__cardTitle}>
               Manutenção contínua

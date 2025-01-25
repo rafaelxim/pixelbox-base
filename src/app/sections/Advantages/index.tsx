@@ -55,12 +55,7 @@ const Advantages = () => {
             <Button>Solicite um orçamento</Button>
           </div>
           <div className={styles.advantages__pics}>
-            <Image
-              objectFit="contain"
-              src="/images/team.png"
-              alt="time de ti"
-              fill
-            />
+            <Image src="/images/team.png" alt="time de ti" fill />
           </div>
         </div>
       </Content>
