@@ -34,7 +34,7 @@ const QUESTIONS = [
     id: 5,
     question: "Vocês oferecem suporte técnico após a conclusão do projeto?",
     answer:
-      "Sim, oferecemos suporte técnico humanizado e direto no WhatsApp, para garantir que tudo esteja funcionando corretamente após a conclusão do projeto e para tirar suas dúvidas ao operar seu site ou loja virtual.",
+      "Sim, oferecemos suporte técnico humanizado e direto no WhatsApp, para garantir que tudo esteja funcionando corretamente após a conclusão do projeto e para tirar suas dúvidas ao operar seu site.",
   },
   {
     id: 6,

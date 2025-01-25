@@ -68,6 +68,21 @@
     text-align: right;
   }
 
+  &__button {
+    border: none;
+    background-color: #4fd298;
+    color: #192b3f;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  &__sent {
+    font-size: 1.6rem;
+  }
+
   @media (width < 1200px) {
     h1 {
       line-height: 3rem;

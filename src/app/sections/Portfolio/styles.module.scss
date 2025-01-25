@@ -17,7 +17,7 @@
     padding: 2rem;
     border-radius: 10px;
     position: relative;
-    min-height: 20rem;
+    min-height: 35rem;
   }
 
   h1,
@@ -28,20 +28,12 @@
   &__grid {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
 }
 
 @media (width < 990px) {
-  .portfolio {
-    &__grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-}
-
-@media (width < 768px) {
   .portfolio {
     margin: 0;
     &__grid {
