@@ -27,12 +27,7 @@ const Benefits = () => {
             <Button>Solicite um orçamento</Button>
           </div>
           <div className={styles.benefits__examples}>
-            <Image
-              alt="examples"
-              src="/images/topranking.png"
-              width={1902}
-              height={621}
-            />
+            <Image alt="examples" src="/images/topranking.png" fill />
           </div>
         </div>
       </Content>

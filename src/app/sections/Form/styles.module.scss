@@ -28,6 +28,10 @@
 
   &__pic {
     position: relative;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   &__fields {

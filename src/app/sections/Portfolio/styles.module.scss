@@ -18,6 +18,10 @@
     border-radius: 10px;
     position: relative;
     min-height: 35rem;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   h1,
@@ -35,6 +39,9 @@
 
 @media (width < 990px) {
   .portfolio {
+    &__item {
+      min-height: 25rem;
+    }
     margin: 0;
     &__grid {
       grid-template-columns: 1fr;
