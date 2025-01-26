@@ -14,7 +14,12 @@ const Button: React.FC<Props> = ({ children }) => {
   };
 
   return (
-    <button data-aos="fade-up" onClick={handleClick} className={styles.button}>
+    <button
+      id="send_whats"
+      data-aos="fade-up"
+      onClick={handleClick}
+      className={styles.button}
+    >
       {children}
     </button>
   );
