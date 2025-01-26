@@ -6,12 +6,14 @@ const Testimonials = () => {
   return (
     <div className={styles.testimonials}>
       <Content>
-        <h2 className={styles.testimonials__preTitle}>Valorizamos</h2>
+        <h2 data-aos="fade-up" className={styles.testimonials__preTitle}>
+          Valorizamos
+        </h2>
         <Title>nossos clientes</Title>
-        <p className={styles.testimonials__strongP}>
+        <p data-aos="fade-up" className={styles.testimonials__strongP}>
           A satisfação dos nossos clientes é a nossa maior conquista.
         </p>
-        <p className={styles.testimonials__paragraph}>
+        <p data-aos="fade-up" className={styles.testimonials__paragraph}>
           Por isso, valorizamos cada feedback que recebemos e estamos sempre
           buscando melhorar nosso atendimento e serviços.
         </p>

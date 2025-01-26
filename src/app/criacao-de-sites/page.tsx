@@ -1,3 +1,8 @@
+"use client";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Advantages from "../sections/Advantages";
 import Benefits from "../sections/Benefits";
 import Facilities from "../sections/Facilities";
@@ -12,6 +17,9 @@ import Strategy from "../sections/Strategy";
 import Testimonials from "../sections/Testimonials";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <Header />

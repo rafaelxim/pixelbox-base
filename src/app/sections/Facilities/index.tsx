@@ -8,12 +8,12 @@ const Facilities = () => {
   return (
     <div className={styles.facilities}>
       <Content>
-        <h2 className={styles.facilities__preTitle}>
+        <h2 data-aos="fade-up" className={styles.facilities__preTitle}>
           Sites de alto desempenho
         </h2>
         <Title>e personalizados em 10 dias</Title>
         <div className={styles.facilities__cardsContainer}>
-          <div className={styles.facilities__card}>
+          <div data-aos="fade-up" className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
               <Image alt="criaçao de sites" src="/icons/responsivo.svg" fill />
             </div>
@@ -24,7 +24,7 @@ const Facilities = () => {
             </p>
           </div>
 
-          <div className={styles.facilities__card}>
+          <div data-aos="fade-up" className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
               <Image alt="criaçao de sites" src="/icons/google.svg" fill />
             </div>
@@ -35,7 +35,7 @@ const Facilities = () => {
             </p>
           </div>
 
-          <div className={styles.facilities__card}>
+          <div data-aos="fade-up" className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
               <Image alt="criaçao de sites" src="/icons/layout.svg" fill />
             </div>
@@ -46,7 +46,7 @@ const Facilities = () => {
             </p>
           </div>
 
-          <div className={styles.facilities__card}>
+          <div data-aos="fade-up" className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
               <Image alt="criaçao de sites" src="/icons/atendimento.svg" fill />
             </div>
@@ -59,7 +59,7 @@ const Facilities = () => {
             </p>
           </div>
 
-          <div className={styles.facilities__card}>
+          <div data-aos="fade-up" className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
               <Image alt="criaçao de sites" src="/icons/impulsao.svg" fill />
             </div>
@@ -72,7 +72,7 @@ const Facilities = () => {
             </p>
           </div>
 
-          <div className={styles.facilities__card}>
+          <div data-aos="fade-up" className={styles.facilities__card}>
             <div className={styles.facilities__cardImg}>
               <Image alt="criaçao de sites" src="/icons/manutencao.svg" fill />
             </div>

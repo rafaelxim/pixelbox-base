@@ -1,8 +1,8 @@
-@import "../../variables";
+@use "../../variables";
 
 .form {
   padding: 4rem 0;
-  color: $secondary-color;
+  color: variables.$secondary-color;
   text-align: center;
 
   h1 {
@@ -23,7 +23,7 @@
 
   &__subtitle {
     font-size: 1.6rem;
-    color: $tertiary-color;
+    color: variables.$tertiary-color;
   }
 
   &__pic {
@@ -37,7 +37,7 @@
   &__fields {
     text-align: left;
     font-size: 1.6rem;
-    color: $tertiary-color;
+    color: variables.$tertiary-color;
 
     input {
       background-color: transparent;

@@ -1,4 +1,4 @@
-@import "../../variables";
+@use "../../variables";
 
 .benefits {
   padding: 2rem 0;
@@ -10,7 +10,7 @@
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 2.5rem;
-    color: $secondary-color;
+    color: variables.$secondary-color;
   }
   &__row {
     display: flex;
@@ -45,7 +45,7 @@
   &__description {
     font-size: 1.6rem;
     margin: 2rem 0;
-    color: $tertiary-color;
+    color: variables.$tertiary-color;
   }
 }
 
@@ -62,10 +62,10 @@
 
     &__examples {
       order: 1;
+      min-height: 47rem;
 
       img {
-        position: relative;
-        left: -4vw;
+        left: -9vw !important;
       }
     }
   }

@@ -1,4 +1,4 @@
-@import "../../variables";
+@use "../../variables";
 
 .strategy {
   padding: 4rem 0;
@@ -7,7 +7,7 @@
   &__preTitle {
     font-size: 2.4rem;
     font-weight: 400;
-    color: $secondary-color;
+    color: variables.$secondary-color;
   }
 
   h1 {
@@ -23,6 +23,6 @@
     font-size: 2.4rem;
     font-weight: 700;
     margin: 2rem 0;
-    color: $tertiary-color;
+    color: variables.$tertiary-color;
   }
 }

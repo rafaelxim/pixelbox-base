@@ -38,9 +38,11 @@ const Form = () => {
       <Content>
         <div className={styles.form__row}>
           <div className={styles.form__heading}>
-            <h2 className={styles.form__preTitle}>Fale conosco</h2>
+            <h2 className={styles.form__preTitle} data-aos="fade-up">
+              Fale conosco
+            </h2>
             <Title>Solicite um orçamento</Title>
-            <p className={styles.form__subtitle}>
+            <p data-aos="fade-up" className={styles.form__subtitle}>
               Preencha o formulário abaixo e entraremos em contato! Ou chame no
               WhatsApp <span>(21) 99850-7055</span>
             </p>
@@ -50,7 +52,7 @@ const Form = () => {
               </p>
             ) : (
               <div className={styles.form__fields}>
-                <div className={styles.form__group}>
+                <div data-aos="fade-up" className={styles.form__group}>
                   <label htmlFor="name">Nome</label>
                   <input
                     onChange={(e) => setNome(e.target.value)}
@@ -60,7 +62,7 @@ const Form = () => {
                   />
                 </div>
 
-                <div className={styles.form__group}>
+                <div data-aos="fade-up" className={styles.form__group}>
                   <label htmlFor="phone">Telefone</label>
                   <input
                     onChange={(e) => setPhone(e.target.value)}
@@ -70,7 +72,7 @@ const Form = () => {
                   />
                 </div>
 
-                <div className={styles.form__group}>
+                <div data-aos="fade-up" className={styles.form__group}>
                   <label htmlFor="mail">E-mail</label>
                   <input
                     onChange={(e) => setEmail(e.target.value)}
@@ -80,7 +82,7 @@ const Form = () => {
                   />
                 </div>
 
-                <div className={styles.form__group}>
+                <div data-aos="fade-up" className={styles.form__group}>
                   <label htmlFor="messsage">Mensagem</label>
                   <textarea
                     onChange={(e) => setMessage(e.target.value)}
@@ -94,6 +96,7 @@ const Form = () => {
                     className={styles.form__button}
                     type="button"
                     onClick={() => handleSendMail()}
+                    data-aos="fade-up"
                   >
                     Enviar
                   </button>
@@ -101,7 +104,7 @@ const Form = () => {
               </div>
             )}
           </div>
-          <div className={styles.form__pic}>
+          <div data-aos="fade-up" className={styles.form__pic}>
             <Image src="/images/contact.avif" alt="contact" fill />
           </div>
         </div>

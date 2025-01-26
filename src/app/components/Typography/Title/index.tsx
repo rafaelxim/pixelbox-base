@@ -6,7 +6,11 @@ type Props = {
 };
 
 const Title: React.FC<Props> = ({ children }) => {
-  return <h1 className={styles.title}>{children}</h1>;
+  return (
+    <h1 data-aos="fade-in" className={styles.title}>
+      {children}
+    </h1>
+  );
 };
 
 export default Title;

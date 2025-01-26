@@ -1,7 +1,7 @@
-@import "../../variables";
+@use "../../variables";
 
 .wrapper {
-  background: $bg-color1;
+  background: variables.$bg-color1;
   padding: 5rem 0;
   position: relative;
 
@@ -46,7 +46,7 @@
 
   &__description {
     font-size: 1.6rem;
-    color: $tertiary-color;
+    color: variables.$tertiary-color;
     text-align: center;
   }
 
@@ -59,7 +59,7 @@
     text-align: center;
 
     span {
-      color: $secondary-color;
+      color: variables.$secondary-color;
     }
   }
 }

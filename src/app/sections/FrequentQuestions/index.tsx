@@ -64,6 +64,7 @@ const FrequentQuestions = () => {
           {QUESTIONS.map((q) => (
             <React.Fragment key={q.id}>
               <div
+                data-aos="fade-up"
                 onClick={() => handleClick(q.id)}
                 className={styles.faq__item}
               >

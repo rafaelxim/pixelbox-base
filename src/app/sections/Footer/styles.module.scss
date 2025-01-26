@@ -1,13 +1,13 @@
-@import "../../variables";
+@use "../../variables";
 
 .footer {
-  background-color: $bg-color2;
+  background-color: variables.$bg-color2;
   padding: 2rem 0;
 
   &__text {
     text-align: center;
     font-size: 1.6rem;
-    color: $tertiary-color;
+    color: variables.$tertiary-color;
 
     span {
       font-weight: 700;

@@ -7,10 +7,12 @@ const Pillars = () => {
   return (
     <div className={styles.pillars}>
       <Content>
-        <h2 className={styles.pillars__preTitle}>Atuamos</h2>
+        <h2 data-aos="fade-up" className={styles.pillars__preTitle}>
+          Atuamos
+        </h2>
         <Title>em 3 pilares</Title>
         <div className={styles.pillars__cardsContainer}>
-          <div className={styles.pillars__card}>
+          <div data-aos="fade-up" className={styles.pillars__card}>
             <div className={styles.pillars__cardImg}>
               <Image alt="criaçao de sites" src="/icons/website.svg" fill />
             </div>
@@ -22,7 +24,7 @@ const Pillars = () => {
             </p>
           </div>
 
-          <div className={styles.pillars__card}>
+          <div data-aos="fade-up" className={styles.pillars__card}>
             <div className={styles.pillars__cardImg}>
               <Image alt="estratégia" src="/icons/strategy.svg" fill />
             </div>
@@ -34,7 +36,7 @@ const Pillars = () => {
             </p>
           </div>
 
-          <div className={styles.pillars__card}>
+          <div data-aos="fade-up" className={styles.pillars__card}>
             <div className={styles.pillars__cardImg}>
               <Image alt="trafego" src="/icons/chart.svg" fill />
             </div>

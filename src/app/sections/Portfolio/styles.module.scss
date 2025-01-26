@@ -1,7 +1,7 @@
-@import "../../variables";
+@use "../../variables";
 
 .portfolio {
-  background-color: $bg-color2;
+  background-color: variables.$bg-color2;
   padding: 4rem 0;
   border-radius: 20px;
   margin: 0 4rem;
@@ -9,11 +9,11 @@
   &__preTitle {
     font-size: 2.4rem;
     font-weight: 400;
-    color: $secondary-color;
+    color: variables.$secondary-color;
   }
 
   &__item {
-    background-color: $bg-color1;
+    background-color: variables.$bg-color1;
     padding: 2rem;
     border-radius: 10px;
     position: relative;
@@ -39,10 +39,11 @@
 
 @media (width < 990px) {
   .portfolio {
+    margin: 0;
+
     &__item {
       min-height: 25rem;
     }
-    margin: 0;
     &__grid {
       grid-template-columns: 1fr;
     }
