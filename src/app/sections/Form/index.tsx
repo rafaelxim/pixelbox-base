@@ -44,7 +44,7 @@ const Form = () => {
             <Title>Solicite um orçamento</Title>
             <p data-aos="fade-up" className={styles.form__subtitle}>
               Preencha o formulário abaixo e entraremos em contato! Ou chame no
-              WhatsApp <span>(21) 99850-7055</span>
+              WhatsApp <span>(21) 97877 3043</span>
             </p>
             {sent ? (
               <p className={styles.form__sent}>
