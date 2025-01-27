@@ -22,7 +22,7 @@ const DATA = {
     image: "/images/topranking.png",
   },
   portfolio: {
-    subtitle: "+ de 10 anos de experiência",
+    subtitle: "Projetos que Transformaram Negócios",
     title: "Veja alguns sites desenvolvidos",
     items: [
       "/images/site1.png",
@@ -50,7 +50,7 @@ const DATA = {
     ],
     subtitle: "Não somos uma empresa de",
     subtitle1:
-      "Os diferenciais que fizeram nossa empresa de 10 anos ser um grande sucesso são:",
+      "Os diferenciais que estão fazendo nossa empresa ser um grande sucesso são:",
     subtitle2:
       "Quem nos contrata afirma que vale a pena porque isso proporciona",
     image: "/images/team.png",
