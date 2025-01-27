@@ -4,30 +4,44 @@ import Title from "@/app/components/Typography/Title";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
-const Benefits = () => {
+type Props = {
+  subTitle: string;
+  title: string;
+  items: string[];
+  description: string;
+  image: string;
+};
+
+const Benefits: React.FC<Props> = ({
+  description,
+  image,
+  items,
+  subTitle,
+  title,
+}) => {
   return (
     <section className={styles.benefits}>
       <Content>
         <div className={styles.benefits__row}>
           <div className={styles.benefits__heading}>
             <h2 data-aos="fade-up" className={styles.benefits__preTitle}>
-              Imagine sua empresa com uma presença forte na internet
+              {subTitle}
             </h2>
-            <Title>Com certeza ela teria...</Title>
+            <Title>{title}</Title>
             <div data-aos="fade-up" className={styles.benefits__list}>
-              <p className={styles.benefits__item}>+ Mais Visibilidade</p>
-              <p className={styles.benefits__item}>+ Mais leads(clientes)</p>
-              <p className={styles.benefits__item}>+ Mais vendas</p>
+              {items.map((i) => (
+                <p key={i} className={styles.benefits__item}>
+                  {i}
+                </p>
+              ))}
             </div>
             <p data-aos="fade-up" className={styles.benefits__description}>
-              Fazemos isso por meio de um site estratégico, utilizando um método
-              exclusivo que permite à sua empresa dominar a atração de clientes
-              no meio digital e alcançar resultados imediatos.
+              {description}
             </p>
             <Button>Solicite um orçamento</Button>
           </div>
           <div data-aos="fade-up" className={styles.benefits__examples}>
-            <Image alt="examples" src="/images/topranking.png" fill />
+            <Image alt="examples" src={image} fill />
           </div>
         </div>
       </Content>

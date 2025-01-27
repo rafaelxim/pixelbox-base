@@ -3,50 +3,38 @@ import Title from "@/app/components/Typography/Title";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
-const Pillars = () => {
+type Props = {
+  subtitle: string;
+  title: string;
+  cards: {
+    title: string;
+    image: string;
+    description: string;
+  }[];
+};
+
+const Pillars: React.FC<Props> = ({ cards, subtitle, title }) => {
   return (
     <div className={styles.pillars}>
       <Content>
         <h2 data-aos="fade-up" className={styles.pillars__preTitle}>
-          Atuamos
+          {subtitle}
         </h2>
-        <Title>em 3 pilares</Title>
+        <Title>{title}</Title>
         <div className={styles.pillars__cardsContainer}>
-          <div data-aos="fade-up" className={styles.pillars__card}>
-            <div className={styles.pillars__cardImg}>
-              <Image alt="criaçao de sites" src="/icons/website.svg" fill />
+          {cards.map((c) => (
+            <div
+              key={c.title}
+              data-aos="fade-up"
+              className={styles.pillars__card}
+            >
+              <div className={styles.pillars__cardImg}>
+                <Image alt="criaçao de sites" src={c.image} fill />
+              </div>
+              <h3 className={styles.pillars__cardTitle}>{c.title}</h3>
+              <p className={styles.pillars__cardText}>{c.description}</p>
             </div>
-            <h3 className={styles.pillars__cardTitle}>Criação de Sites</h3>
-            <p className={styles.pillars__cardText}>
-              Desenvolvemos sites personalizados, prontos e totalmente
-              configurados. Um site estratégico, otimizado com técnicas de SEO
-              (para buscadores) e conteúdo voltado para alta conversão.
-            </p>
-          </div>
-
-          <div data-aos="fade-up" className={styles.pillars__card}>
-            <div className={styles.pillars__cardImg}>
-              <Image alt="estratégia" src="/icons/strategy.svg" fill />
-            </div>
-            <h3 className={styles.pillars__cardTitle}>Estratégia Digital</h3>
-            <p className={styles.pillars__cardText}>
-              Tudo começa com uma boa estratégia. Criamos funis de vendas
-              alinhados à jornada do cliente, garantindo um marketing eficiente
-              que gera resultados reais e vendas consistentes.
-            </p>
-          </div>
-
-          <div data-aos="fade-up" className={styles.pillars__card}>
-            <div className={styles.pillars__cardImg}>
-              <Image alt="trafego" src="/icons/chart.svg" fill />
-            </div>
-            <h3 className={styles.pillars__cardTitle}>Tráfego</h3>
-            <p className={styles.pillars__cardText}>
-              Trabalhamos com Google Meu Negócio e redes sociais de forma
-              orgânica, além de potencializar os resultados com Google Ads e
-              Meta Ads, sempre com estratégias adaptadas à sua empresa.
-            </p>
-          </div>
+          ))}
         </div>
       </Content>
     </div>

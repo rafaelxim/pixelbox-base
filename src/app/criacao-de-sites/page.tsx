@@ -15,6 +15,7 @@ import Pillars from "../sections/Pillars";
 import Portfolio from "../sections/Portfolio";
 import Strategy from "../sections/Strategy";
 import Testimonials from "../sections/Testimonials";
+import DATA from "./data";
 
 const Home = () => {
   useEffect(() => {
@@ -22,16 +23,16 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <Header />
-      <Pains />
-      <Benefits />
-      <Portfolio />
-      <Advantages />
-      <Testimonials />
-      <Strategy />
-      <Pillars />
-      <Facilities />
-      <FrequentQuestions />
+      <Header {...DATA.header} />
+      <Pains {...DATA.pains} />
+      <Benefits {...DATA.benefits} />
+      <Portfolio {...DATA.portfolio} />
+      <Advantages {...DATA.advantages} />
+      <Testimonials {...DATA.testimonials} />
+      <Strategy {...DATA.strategy} />
+      <Pillars {...DATA.pillars} />
+      <Facilities {...DATA.facilities} />
+      <FrequentQuestions {...DATA.faq} />
       <Form />
       <Footer />
     </div>

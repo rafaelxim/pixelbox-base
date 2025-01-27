@@ -4,7 +4,13 @@ import styles from "./styles.module.scss";
 
 import Image from "next/image";
 
-const Header = () => {
+type Props = {
+  title: string;
+  description: string;
+  mainImage: string;
+};
+
+const Header: React.FC<Props> = ({ description, mainImage, title }) => {
   return (
     <main className={styles.wrapper}>
       <Content>
@@ -16,23 +22,18 @@ const Header = () => {
               width={250}
               height={55}
             />
-            <h1 data-aos="fade-in" className={styles.heading__title}>
-              Criação de <span>Sites Profissionais</span>
-            </h1>
+            <h1
+              dangerouslySetInnerHTML={{ __html: title }}
+              data-aos="fade-in"
+              className={styles.heading__title}
+            />
             <div data-aos="fade-in" className={styles.heading__description}>
-              Tenha um site profissional e exclusivo em até 10 dias. Impulsione
-              a visibilidade e a confiança da sua marca. Fale agora com um
-              especialista!
+              {description}
             </div>
             <Button data-aos="fade-in">Solicite um orçamento</Button>
           </div>
           <div data-aos="fade-in" className={styles.examples}>
-            <Image
-              src="/images/sites-examples.png"
-              alt="exemplos"
-              height={933}
-              width={1119}
-            />
+            <Image src={mainImage} alt="exemplos" height={933} width={1119} />
           </div>
         </div>
       </Content>

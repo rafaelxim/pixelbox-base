@@ -3,24 +3,28 @@ import Content from "@/app/components/Content";
 import Title from "@/app/components/Typography/Title";
 import styles from "./styles.module.scss";
 
-const Strategy = () => {
+type Props = {
+  subtitle: string;
+  title: string;
+  text1: string;
+  text2: string;
+};
+
+const Strategy: React.FC<Props> = ({ subtitle, text1, text2, title }) => {
   return (
     <div className={styles.strategy}>
       <Content>
         <h2 data-aos="fade-up" className={styles.strategy__preTitle}>
-          Só um site não basta
+          {subtitle}
         </h2>
-        <Title>É preciso estratégia para vender mais</Title>
+        <Title>{title}</Title>
 
         <p data-aos="fade-up" className={styles.strategy__paragraph}>
-          Ter um site bonito e profissional não é o suficiente. Você precisa de
-          um site estratégico, que atue como uma máquina de atração e conversão
-          de clientes.
+          {text1}
         </p>
 
         <p data-aos="fade-up" className={styles.strategy__paragraph}>
-          Fale conosco e descubra como transformar seu site em uma ferramenta
-          poderosa de vendas com uma estratégia eficaz e resultados reais!
+          {text2}
         </p>
         <Button>Solicite um orçamento</Button>
       </Content>
