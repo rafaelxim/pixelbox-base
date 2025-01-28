@@ -97,6 +97,7 @@ const Form = () => {
                     type="button"
                     onClick={() => handleSendMail()}
                     data-aos="fade-up"
+                    id="send_whats"
                   >
                     Enviar
                   </button>
