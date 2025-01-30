@@ -4,7 +4,7 @@ import Image from "next/image";
 import { PostData } from "../types";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export default async function Post({ params }: Props) {
