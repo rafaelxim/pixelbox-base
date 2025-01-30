@@ -1,6 +1,22 @@
+"use client";
+
+// import { db } from "@/config";
+// import { addDoc, collection } from "firebase/firestore";
+
 import Image from "next/image";
+// import { useEffect } from "react";
 
 const Blog = () => {
+  // useEffect(() => {
+  //   addItem();
+  // }, []);
+
+  // const addItem = async () => {
+  //   await addDoc(collection(db, "posts"), {
+  //     title: "new Post",
+  //   });
+  // };
+
   return (
     <div>
       <section className="featured">

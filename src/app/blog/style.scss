@@ -16212,7 +16212,7 @@ h4 {
     width: 95%;
     margin: 20px auto;
     border-radius: 8px;
-    background: #fff;
+    background: variables.$bg-color1;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09);
   }
 }
@@ -17377,7 +17377,6 @@ h4 {
 
 .blog-single .single-blog p {
   font-size: 14px;
-  font-weight: 500;
 }
 
 .blog-single .single-blog h3 {
