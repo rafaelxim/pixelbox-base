@@ -35,9 +35,9 @@ export default function BlogLayout({
             <div className="collapse navbar-collapse nav-list" id="mainNav">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="/blog/page/1">
+                  <Link className="nav-link" href="/blog/page/1">
                     Blog{" "}
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" href="/criacao-de-sites">
