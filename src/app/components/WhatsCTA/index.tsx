@@ -4,7 +4,10 @@ import styles from "./styles.module.scss";
 
 const WhatsCTA = () => {
   const handleClick = () => {
-    window.open(`https://wa.me/${PHONE}`, "_blank");
+    window.open(
+      `https://wa.me/${PHONE}?text=Gostaria%20de%20solicitar%20um%20orçamento`,
+      "_blank"
+    );
   };
   return (
     <div onClick={handleClick} id="send_whats" className={styles.whats}>
