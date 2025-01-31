@@ -35,7 +35,7 @@ export default function BlogLayout({
             <div className="collapse navbar-collapse nav-list" id="mainNav">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="index.html">
+                  <a className="nav-link" href="/blog/page/1">
                     Blog{" "}
                   </a>
                 </li>
@@ -152,8 +152,11 @@ export default function BlogLayout({
         </section>
       </main>
       <Script src="/vendor/jQuery/jquery.min.js" strategy="beforeInteractive" />
-      <Script src="/vendor/bootstrap/bootstrap.min.js" />
-      <Script src="/vendor/slick/slick.min.js" />
+      <Script
+        src="/vendor/bootstrap/bootstrap.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script src="/vendor/slick/slick.min.js" strategy="beforeInteractive" />
       <Script src="/vendor/script.js" />
     </>
   );

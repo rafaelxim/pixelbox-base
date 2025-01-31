@@ -16709,6 +16709,11 @@ h4 {
   .featured-post-author {
     margin-bottom: 10px;
   }
+
+  .featured-post-thumb img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .featured-post-author img {
@@ -16856,6 +16861,7 @@ h4 {
 .blog-post-thumb img {
   width: 100%;
   transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  object-fit: cover;
 }
 
 .blog-post-content {
@@ -17443,8 +17449,8 @@ h4 {
 
 .blog-single .single-blog blockquote p {
   color: #fff;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   margin-bottom: 0;
   padding: 0;
   letter-spacing: 1px;
@@ -17452,7 +17458,7 @@ h4 {
 
 @media (max-width: 575px) {
   .blog-single .single-blog blockquote p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -17788,4 +17794,10 @@ h4 {
   color: #fff;
 }
 
+
+.blog-form{
+  label{
+    min-width: 300px;
+  }
+}
 /*# sourceMappingURL=maps/style.css.map */

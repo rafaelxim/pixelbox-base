@@ -73,7 +73,7 @@ export default async function Post({ params }: Props) {
                 <Image
                   width={870}
                   height={500}
-                  src={`/blog-images/blog/${post.coverImage}`}
+                  src={`/blog-images/${post.coverImage}`}
                   alt="banner"
                 />
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />

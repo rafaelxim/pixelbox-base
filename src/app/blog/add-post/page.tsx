@@ -13,10 +13,15 @@ export default function AddPostForm() {
     const content = formData.get("content") as string;
     const category = formData.get("category") as string;
     const author = formData.get("author") as string;
+    const description = formData.get("description") as string;
     const coverImage = formData.get("coverImage") as string;
 
     // Cria o slug a partir do título
-    const slug = title.toLowerCase().replace(/ /g, "-");
+    const slug = title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-");
 
     // Cria o objeto de dados do post
     const postData: PostData = {
@@ -25,6 +30,7 @@ export default function AddPostForm() {
       author,
       coverImage,
       slug,
+      description,
       category,
       createdAt: serverTimestamp(),
     };
@@ -39,14 +45,18 @@ export default function AddPostForm() {
   }
 
   return (
-    <form action={handleSubmit}>
+    <form className="blog-form" action={handleSubmit}>
       <div>
         <label htmlFor="title">Título:</label>
         <input type="text" id="title" name="title" required />
       </div>
       <div>
         <label htmlFor="content">Conteúdo:</label>
-        <textarea id="content" name="content" required />
+        <textarea rows={50} id="content" name="content" required />
+      </div>
+      <div>
+        <label htmlFor="description">Categoria:</label>
+        <textarea id="description" name="description" required />
       </div>
 
       <div>

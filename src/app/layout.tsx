@@ -22,8 +22,6 @@ export default function RootLayout({
 }>) {
   const isProduction = process.env.NODE_ENV === "production";
 
-  console.log({ isProduction });
-
   return (
     <html lang="pt-br">
       {isProduction && (

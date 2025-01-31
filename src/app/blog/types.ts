@@ -9,4 +9,5 @@ export interface PostData {
   createdAt: any; // Use `any` temporariamente para o timestamp do Firestore
   id?: string;
   category: string;
+  description: string;
 }

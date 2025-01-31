@@ -7,12 +7,12 @@ import { getFirestore } from "@firebase/firestore";
 export const PHONE = "5521978773043";
 
 const firebaseConfig = {
-  apiKey: "-",
+  apiKey: process.env.firebaseApiKey,
   authDomain: "pixelbox-db.firebaseapp.com",
   projectId: "pixelbox-db",
   storageBucket: "pixelbox-db.firebasestorage.app",
   messagingSenderId: "280778153287",
-  appId: "-",
+  appId: process.env.firebasAppId,
 };
 
 // Initialize Firebase
