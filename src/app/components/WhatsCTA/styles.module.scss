@@ -1,0 +1,17 @@
+.whats {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  padding: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  img {
+    margin: auto;
+    width: 60% !important;
+    height: 60% !important;
+  }
+}

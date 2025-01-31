@@ -3,6 +3,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import WhatsCTA from "../components/WhatsCTA";
 import Advantages from "../sections/Advantages";
 import Benefits from "../sections/Benefits";
 import Facilities from "../sections/Facilities";
@@ -35,6 +36,7 @@ const Home = () => {
       <FrequentQuestions {...DATA.faq} />
       <Form />
       <Footer />
+      <WhatsCTA />
     </div>
   );
 };
