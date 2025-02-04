@@ -1,0 +1,65 @@
+@use "../../variables";
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+}
+
+.dialog-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 400px;
+  max-width: 90%;
+  color: variables.$bg-color1;
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input {
+    background-color: transparent;
+    border: 1px solid variables.$bg-color1;
+    color: variables.$bg-color1;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 5px;
+  }
+
+  label {
+    display: block;
+    font-size: 18px;
+  }
+}
+
+.dialog-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.form-button {
+  padding: 6px 24px;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}

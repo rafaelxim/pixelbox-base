@@ -1,13 +1,12 @@
-import { PHONE } from "@/config";
+import { useGlobalState } from "@/context/GlobalStateContext";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
 const WhatsCTA = () => {
+  const { setIsOpen } = useGlobalState();
+
   const handleClick = () => {
-    window.open(
-      `https://wa.me/${PHONE}?text=Gostaria%20de%20solicitar%20um%20orçamento`,
-      "_blank"
-    );
+    setIsOpen(true);
   };
   return (
     <div onClick={handleClick} id="send_whats" className={styles.whats}>

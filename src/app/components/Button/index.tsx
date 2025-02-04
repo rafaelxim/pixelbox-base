@@ -1,7 +1,7 @@
 "use client";
 
+import { useGlobalState } from "@/context/GlobalStateContext";
 import { ReactNode } from "react";
-import { PHONE } from "../../../config";
 import styles from "./styles.module.scss";
 
 type Props = {
@@ -9,11 +9,10 @@ type Props = {
 };
 
 const Button: React.FC<Props> = ({ children }) => {
+  const { setIsOpen } = useGlobalState();
+
   const handleClick = () => {
-    window.open(
-      `https://wa.me/${PHONE}?text=Gostaria%20de%20solicitar%20um%20orçamento.`,
-      "_blank"
-    );
+    setIsOpen(true);
   };
 
   return (

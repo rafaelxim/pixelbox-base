@@ -1,3 +1,4 @@
+import { GlobalStateProvider } from "@/context/GlobalStateContext";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
@@ -34,7 +35,9 @@ export default function RootLayout({
         </Script>
       )}
 
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <GlobalStateProvider>{children}</GlobalStateProvider>
+      </body>
     </html>
   );
 }
