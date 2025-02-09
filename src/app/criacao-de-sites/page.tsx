@@ -12,7 +12,7 @@ import Facilities from "../sections/Facilities";
 import Footer from "../sections/Footer";
 import Form from "../sections/Form";
 import FrequentQuestions from "../sections/FrequentQuestions";
-import Header from "../sections/Header";
+import HeroWithVideo from "../sections/HeroWithVideo";
 import Pains from "../sections/Pains";
 import Pillars from "../sections/Pillars";
 import Portfolio from "../sections/Portfolio";
@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header {...DATA.header} />
+      <HeroWithVideo {...DATA.heroVideo} />
       <Pains {...DATA.pains} />
       <Benefits {...DATA.benefits} />
       <Portfolio {...DATA.portfolio} />

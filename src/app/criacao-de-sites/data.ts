@@ -1,4 +1,9 @@
 const DATA = {
+  heroVideo: {
+    title:
+      "Tenha um site profissional, bem-feito e pronto para atrair clientes",
+    subtitle: "Pare de perder vendas",
+  },
   header: {
     title: "Criação de <span>Sites Profissionais</span>",
     description:
