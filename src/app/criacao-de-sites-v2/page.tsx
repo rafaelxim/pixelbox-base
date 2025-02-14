@@ -1,11 +1,8 @@
 "use client";
 
-import { useGlobalState } from "@/context/GlobalStateContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import WhatsCTA from "../components/WhatsCTA";
-import WhatsDialog from "../components/WhatsDialog";
 import Advantages from "../sections/Advantages";
 import Benefits from "../sections/Benefits";
 import Facilities from "../sections/Facilities";
@@ -21,8 +18,6 @@ import Testimonials from "../sections/Testimonials";
 import DATA from "./data";
 
 const Home = () => {
-  const { isOpen, setIsOpen } = useGlobalState();
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -41,8 +36,6 @@ const Home = () => {
       <FrequentQuestions {...DATA.faq} />
       <Form />
       <Footer />
-      <WhatsCTA />
-      <WhatsDialog isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   );
 };

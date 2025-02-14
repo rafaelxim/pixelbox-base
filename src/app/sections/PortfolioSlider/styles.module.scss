@@ -1,0 +1,23 @@
+@use "../../variables";
+
+.portfolioSlider {
+  position: relative;
+  margin: 7rem 4rem;
+
+  &__preTitle {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: variables.$secondary-color;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (width < 768px) {
+  .portfolioSlider {
+    margin: 7rem 1rem;
+  }
+}
