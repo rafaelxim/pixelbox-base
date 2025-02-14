@@ -1,6 +1,5 @@
 "use client";
 
-import { useGlobalState } from "@/context/GlobalStateContext";
 import { ReactNode } from "react";
 import styles from "./styles.module.scss";
 
@@ -9,10 +8,11 @@ type Props = {
 };
 
 const Button: React.FC<Props> = ({ children }) => {
-  const { setIsOpen } = useGlobalState();
-
   const handleClick = () => {
-    setIsOpen(true);
+    window.open(
+      "https://app.leadster.com.br/capture/14w0uvMwRKsZS7Qx",
+      "_blank"
+    );
   };
 
   return (

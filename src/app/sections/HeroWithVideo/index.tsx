@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Button from "@/app/components/Button";
 import Title from "@/app/components/Typography/Title";
 import { useRef, useState } from "react";
 import styles from "./styles.module.scss";
@@ -44,6 +45,9 @@ const HeroWithVideo = ({ subtitle, title }: Props) => {
             />
           )}
         </div>
+      </div>
+      <div className={styles.action}>
+        <Button> Solcitar um Orçamento</Button>
       </div>
     </section>
   );
