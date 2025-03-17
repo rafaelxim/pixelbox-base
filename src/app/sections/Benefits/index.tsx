@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Button from "@/app/components/Button";
 import Content from "@/app/components/Content";
 import Title from "@/app/components/Typography/Title";
-import Image from "next/image";
 import styles from "./styles.module.scss";
 
 type Props = {
@@ -20,7 +20,7 @@ const Benefits: React.FC<Props> = ({
   title,
 }) => {
   return (
-    <section className={styles.benefits}>
+    <section id="benefits" className={styles.benefits}>
       <Content>
         <div className={styles.benefits__row}>
           <div className={styles.benefits__heading}>
@@ -41,7 +41,10 @@ const Benefits: React.FC<Props> = ({
             <Button>Solicite um orçamento</Button>
           </div>
           <div data-aos="fade-up" className={styles.benefits__examples}>
-            <Image alt="examples" src={image} fill />
+            <div className={styles.benefits__backExemplo}>
+              <img alt="back" src="/images/barberfull.jpg" />
+            </div>
+            <img data-aos="zoom-in" alt="examples" src={image} />
           </div>
         </div>
       </Content>

@@ -1,7 +1,4 @@
-@use "../../variables";
-
 .wrapper {
-  background: variables.$bg-color1;
   padding: 5rem 0;
   position: relative;
 
@@ -15,7 +12,7 @@
     width: 550px;
     height: 225px;
     border-radius: 552px;
-    background: #395779;
+    background: url("../../../../public/images/blick-white.svg"), #8888885e;
     filter: blur(197px);
   }
 }
@@ -72,7 +69,7 @@
 
   &__description {
     font-size: 1.6rem;
-    color: variables.$tertiary-color;
+    color: var(--tertiary-color);
     text-align: center;
   }
 
@@ -84,7 +81,7 @@
     text-align: center;
 
     span {
-      color: variables.$secondary-color;
+      color: var(--secondary-color);
     }
   }
 }

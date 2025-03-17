@@ -1,7 +1,20 @@
-@use "../../variables";
-
 .advantages {
   padding: 4rem 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 225px;
+    border-radius: 552px;
+    background: url("../../../../public/images/blick-white.svg"), #8888885e;
+    filter: blur(197px);
+  }
 
   &__pics {
     position: relative;
@@ -28,7 +41,7 @@
 
   &__preTitle {
     font-size: 2.4rem;
-    color: variables.$secondary-color;
+    color: var(--secondary-color);
   }
 
   &__subtitle {
@@ -39,10 +52,10 @@
   &__item {
     font-size: 1.8rem;
     margin: 1rem 0;
-    color: variables.$tertiary-color;
+    color: var(--tertiary-color);
 
     span {
-      color: variables.$secondary-color;
+      color: var(--secondary-color);
     }
   }
 

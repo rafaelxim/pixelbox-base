@@ -1,13 +1,11 @@
-@use "../../variables";
-
 .footer {
-  background-color: variables.$bg-color2;
+  background-color: var(--bg-color2);
   padding: 2rem 0;
 
   &__text {
     text-align: center;
     font-size: 1.6rem;
-    color: variables.$tertiary-color;
+    color: var(--tertiary-color);
 
     span {
       font-weight: 700;

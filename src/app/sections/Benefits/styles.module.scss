@@ -1,7 +1,20 @@
-@use "../../variables";
-
 .benefits {
   padding: 2rem 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 225px;
+    border-radius: 552px;
+    background: url("../../../../public/images/blick-white.svg"), #8888885e;
+    filter: blur(197px);
+  }
 
   h1 {
     line-height: 3rem;
@@ -10,10 +23,11 @@
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 2.5rem;
-    color: variables.$secondary-color;
+    color: var(--secondary-color);
   }
   &__row {
     display: flex;
+    gap: 5rem;
   }
 
   &__heading {
@@ -28,13 +42,30 @@
     font-weight: 700;
   }
 
+  &__backExemplo {
+    position: absolute;
+    top: 6px;
+    left: 14%;
+    right: 13%;
+    bottom: 36%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      position: relative;
+      top: 0;
+      transition: top 3s ease-in-out;
+    }
+  }
+
   &__examples {
     flex: 1 0 50%;
     position: relative;
-    min-height: 65rem;
+    min-height: 40rem;
 
-    img {
-      object-fit: contain;
+    > img {
+      object-fit: cover;
+      width: 100%;
     }
   }
 
@@ -45,14 +76,19 @@
   &__description {
     font-size: 1.6rem;
     margin: 2rem 0;
-    color: variables.$tertiary-color;
+    color: var(--tertiary-color);
+  }
+
+  &__row:hover &__backExemplo img {
+    top: -200%;
   }
 }
 
-@media (width < 768px) {
+@media (width < 994px) {
   .benefits {
     &__row {
       flex-direction: column;
+      gap: unset;
     }
 
     &__heading {
@@ -62,7 +98,7 @@
 
     &__examples {
       order: 1;
-      min-height: 47rem;
+      min-height: 27rem;
     }
   }
 }

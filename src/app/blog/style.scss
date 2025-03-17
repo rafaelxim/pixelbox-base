@@ -79,7 +79,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: variables.$bg-color1;
+  background-color: var(--bg-color1);
 }
 
 img {
@@ -16082,8 +16082,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: variables.$secondary-color;
-  background: variables.$bg-color1;
+  color: var(--secondary-color);
+  background: var(--bg-color1);
 }
 
 h1,
@@ -16212,7 +16212,7 @@ h4 {
     width: 95%;
     margin: 20px auto;
     border-radius: 8px;
-    background: variables.$bg-color1;
+    background: var(--bg-color1);
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09);
   }
 }
@@ -16463,7 +16463,7 @@ h4 {
   border: 1px solid #e0dede;
   border-radius: 50px;
   text-decoration: none;
-  color: variables.$secondary-color;
+  color: var(--secondary-color);
   margin-right: 10px;
   transition: all 0.3s ease-in-out;
 }
@@ -16634,7 +16634,7 @@ h4 {
 }
 
 .contact-form-generator a {
-  color: variables.$secondary-color;
+  color: var(--secondary-color);
 }
 
 .featured {
@@ -16729,7 +16729,7 @@ h4 {
   font-size: 26px;
   line-height: 36px;
   margin-bottom: 0;
-  color: variables.$secondary-color;
+  color: var(--secondary-color);
 }
 
 @media (max-width: 575px) {
@@ -16906,13 +16906,13 @@ h4 {
 }
 
 .blog-post-tag a {
-  background-color: variables.$secondary-color;
+  background-color: var(--secondary-color);
   padding: 4px 20px;
   display: inline-block;
   border-radius: 50px;
   text-decoration: none;
   font-size: 12px;
-  color: variables.$bg-color1;
+  color: var(--bg-color1);
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -17053,7 +17053,7 @@ h4 {
 
 .blog-post-widget .latest-widget-thum .icon a {
   position: absolute;
-  background: variables.$secondary-color;
+  background: var(--secondary-color);
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -17297,13 +17297,13 @@ h4 {
 }
 
 .blog-single .single-blog .tag {
-  background-color: variables.$secondary-color;
+  background-color: var(--secondary-color);
   padding: 5px 20px;
   display: inline-block;
   border-radius: 50px;
   text-decoration: none;
   font-size: 12px;
-  color: variables.$bg-color1;
+  color: var(--bg-color1);
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -17404,7 +17404,7 @@ h4 {
 }
 
 .blog-single .single-blog blockquote {
-  background-color: variables.$bg-color2;
+  background-color: var(--bg-color2);
   padding: 45px 100px 40px 50px;
   margin-bottom: 70px;
   position: relative;
@@ -17435,7 +17435,7 @@ h4 {
   position: absolute;
   width: 50px;
   height: 3px;
-  background-color: variables.$secondary-color;
+  background-color: var(--secondary-color);
   top: 50%;
   left: -3%;
   transform: translate(0, -50%) rotate(90deg);
@@ -17537,12 +17537,12 @@ h4 {
 
 .blog-single-presentation ul li .tag {
   padding: 10px 30px;
-  background-color: variables.$secondary-color;
+  background-color: var(--secondary-color);
   display: inline-block;
   border-radius: 50px;
   text-decoration: none;
   font-size: 12px;
-  color: variables.$bg-color1;
+  color: var(--bg-color1);
   font-weight: 600;
   margin-bottom: 20px;
   transition: all 0.3s ease-in-out;
@@ -17750,11 +17750,11 @@ h4 {
 }
 
 .footer .sociale-icon ul li a {
-  color: variables.$secondary-color;
+  color: var(--secondary-color);
   font-size: 16px;
   width: 40px;
   height: 40px;
-  background-color: variables.$bg-color2;
+  background-color: var(--bg-color2);
   border-radius: 50px;
   margin-right: 10px;
   display: flex;
@@ -17766,7 +17766,7 @@ h4 {
 }
 
 .footer .sociale-icon ul li a:hover {
-  background-color: variables.$bg-color1;
+  background-color: var(--bg-color1);
   color: #fff;
 }
 
@@ -17794,9 +17794,8 @@ h4 {
   color: #fff;
 }
 
-
-.blog-form{
-  label{
+.blog-form {
+  label {
     min-width: 300px;
   }
 }

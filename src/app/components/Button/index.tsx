@@ -18,7 +18,7 @@ const Button: React.FC<Props> = ({ children }) => {
   return (
     <button
       id="send_whats"
-      data-aos="fade-up"
+      data-aos="fade-left"
       onClick={handleClick}
       className={styles.button}
     >
