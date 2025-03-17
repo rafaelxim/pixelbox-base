@@ -16103,7 +16103,7 @@ a {
 
 p {
   font-size: 16px;
-  color: variables.$tertiary-color;
+  color: var(--tertiary-color);
   line-height: 26px;
 }
 
@@ -16319,10 +16319,10 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid variables.$tertiary-color;
+  border: 1px solid var(--tertiary-color);
   border-radius: 50px;
   text-decoration: none;
-  color: variables.$tertiary-color;
+  color: var(--tertiary-color);
   font-size: 16px;
 }
 
@@ -16921,7 +16921,7 @@ h4 {
   margin: 0 0 18px;
   display: flex;
   list-style: none;
-  color: variables.$tertiary-color;
+  color: var(--tertiary-color);
 }
 
 @media (max-width: 575px) {
@@ -16990,8 +16990,8 @@ h4 {
   padding: 0;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid variables.$tertiary-color;
-  color: variables.$tertiary-color;
+  border: 1px solid var(--tertiary-color);
+  color: var(--tertiary-color);
   margin-right: 10px;
   background: 0;
   transition: all 0.3s ease-in-out;
@@ -17100,7 +17100,7 @@ h4 {
   margin: 0;
   display: flex;
   list-style: none;
-  color: variables.$tertiary-color;
+  color: var(--tertiary-color);
 }
 
 .blog-post-widget .latest-widget-content .content-meta ul li {
@@ -17157,7 +17157,7 @@ h4 {
 
 .blog-single .share-now a.scrol {
   position: relative;
-  color: variables.$tertiary-color;
+  color: var(--tertiary-color);
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
@@ -17195,7 +17195,7 @@ h4 {
   content: "";
   width: 70px;
   height: 1px;
-  background: variables.$tertiary-color;
+  background: var(--tertiary-color);
   transform: rotate(90deg);
   bottom: -40px;
   left: -10px;
@@ -17263,10 +17263,10 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid variables.$tertiary-color;
+  border: 1px solid var(--tertiary-color);
   border-radius: 50px;
   text-decoration: none;
-  color: variables.$tertiary-color;
+  color: var(--tertiary-color);
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
@@ -17351,7 +17351,7 @@ h4 {
 
 .blog-single .single-blog .meta li {
   font-size: 14px;
-  color: variables.$tertiary-color;
+  color: var(--tertiary-color);
 }
 
 .blog-single .single-blog .meta li:not(:last-child) {
@@ -17359,7 +17359,7 @@ h4 {
 }
 
 .blog-single .single-blog .meta li a {
-  color: variables.$tertiary-color;
+  color: var(--tertiary-color);
 }
 
 .blog-single .single-blog img {
