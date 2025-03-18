@@ -1,0 +1,15 @@
+.appContainer {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background-image: url("/images/abstraction.svg");
+    background-position: top;
+    opacity: 0.1; // Ajuste a opacidade aqui
+    z-index: -1;
+  }
+}

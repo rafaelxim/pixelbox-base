@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import AppContainer from "../components/AppContainer";
 import BackgroundChanger from "../components/BgColorChanger";
 import Advantages from "../sections/Advantages";
 import Benefits from "../sections/Benefits";
@@ -24,7 +26,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <AppContainer>
       <BackgroundChanger color="#192b3f" />
       <Header {...DATA.header} />
       <Pains {...DATA.pains} />
@@ -41,7 +43,7 @@ const Home = () => {
       <FrequentQuestions {...DATA.faq} />
       <Form />
       <Footer />
-    </div>
+    </AppContainer>
   );
 };
 
