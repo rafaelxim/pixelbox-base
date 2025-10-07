@@ -3,7 +3,8 @@
   --foreground: #171717;
 
   --bg-color1: #192b3f;
-  --bg-color2: #0000004d;
+  --bg-color2: color-mix(in srgb, var(--bg-color1) 60%, black);
+
   --secondary-color: #4fd298;
   --tertiary-color: #a7c5e7;
 }

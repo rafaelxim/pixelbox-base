@@ -77,22 +77,22 @@ const DATA = {
     title: "em 3 pilares",
     cards: [
       {
-        title: "Criação de Sites",
+        title: "Design Personalizado",
         image: "/icons/website.svg",
         description:
-          "Desenvolvemos sites personalizados, prontos e totalmente configurados. Um site estratégico, otimizado com técnicas de SEO (para buscadores) e conteúdo voltado para alta conversão.",
+          "Criamos layouts únicos que refletem a identidade da sua marca. Focamos em um design intuitivo (UI/UX) para oferecer a melhor experiência ao usuário, guiando-o de forma clara e incentivando a conversão",
       },
       {
-        title: "Estratégia Digital",
+        title: "Otimização SEO",
         image: "/icons/strategy.svg",
         description:
-          "Tudo começa com uma boa estratégia. Criamos funis de vendas alinhados à jornada do cliente, garantindo um marketing eficiente que gera resultados reais e vendas consistentes.",
+          "Desenvolvemos sites robustos, rápidos e seguros. Cada página é construída com código limpo e otimizada com as principais técnicas de SEO para que seu negócio seja encontrado facilmente no Google",
       },
       {
-        title: "Tráfego",
-        image: "/icons/strategy.svg",
+        title: "Performance",
+        image: "/icons/website.svg",
         description:
-          "Trabalhamos com Google Meu Negócio e redes sociais de forma orgânica, além de potencializar os resultados com Google Ads e Meta Ads, sempre com estratégias adaptadas à sua empresa.",
+          "Entregamos seu site pronto, configurado e 100% responsivo, funcionando perfeitamente em computadores, tablets e celulares. Uma plataforma profissional projetada para gerar resultados e fortalecer sua presença online",
       },
     ],
   },

@@ -18,6 +18,7 @@
     border-radius: 552px;
     background: url("../../../../public/images/blick-white.svg"), #8888885e;
     filter: blur(197px);
+    z-index: -1;
   }
 
   &__title {
