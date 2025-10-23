@@ -1,3 +1,4 @@
+import Chatbot from "@/app/components/Chatbot";
 import { GlobalStateProvider } from "@/context/GlobalStateContext";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -51,7 +52,7 @@ fbq('track', 'PageView');`}
       )}
 
       <body className={poppins.className}>
-        <GlobalStateProvider>{children}</GlobalStateProvider>
+        <GlobalStateProvider>{children}<Chatbot /></GlobalStateProvider>
       </body>
     </html>
   );

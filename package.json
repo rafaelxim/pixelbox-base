@@ -18,8 +18,11 @@
     "firebase": "^11.2.0",
     "next": "15.1.5",
     "react": "^19.0.0",
+    "react-chatbotify": "^2.4.1",
     "react-dom": "^19.0.0",
-    "swiper": "^11.2.3"
+    "react-input-mask": "^2.0.4",
+    "swiper": "^11.2.3",
+    "twilio": "^5.10.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
