@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { ReactNode } from "react";
 import styles from "./styles.module.scss";
 
@@ -8,11 +9,10 @@ type Props = {
 };
 
 const Button: React.FC<Props> = ({ children }) => {
+  const router = useRouter();
+
   const handleClick = () => {
-    window.open(
-      "https://app.leadster.com.br/capture/14w0uvMwRKsZS7Qx",
-      "_blank"
-    );
+    router.push("/chat");
   };
 
   return (

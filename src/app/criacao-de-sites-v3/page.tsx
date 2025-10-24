@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import AppContainer from "../components/AppContainer";
 import BackgroundChanger from "../components/BgColorChanger";
+import Chatbot from "../components/Chatbot";
 import Advantages from "../sections/Advantages";
 import Benefits from "../sections/Benefits";
 import Facilities from "../sections/Facilities";
@@ -27,7 +28,8 @@ const Home = () => {
 
   return (
     <AppContainer>
-      <BackgroundChanger color="#192b3f" />
+      <Chatbot embedded={false} />
+      <BackgroundChanger color="#192b3f" />    
       <Header {...DATA.header} />
       <Pains {...DATA.pains} />
       <BackgroundChanger color="#1A403C" />

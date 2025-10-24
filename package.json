@@ -20,7 +20,6 @@
     "react": "^19.0.0",
     "react-chatbotify": "^2.4.1",
     "react-dom": "^19.0.0",
-    "react-input-mask": "^2.0.4",
     "swiper": "^11.2.3",
     "twilio": "^5.10.3"
   },

@@ -6,7 +6,7 @@ export async function GET(request: NextRequest) {
   const authToken = process.env.TWILIO_AUTH_TOKEN;
   const client = twilio(accountSid, authToken);
 
-  const { searchParams } = new URL(request.url);
+  const searchParams = request.nextUrl.searchParams;
   const name = searchParams.get('name');
   const whatsapp = searchParams.get('whatsapp');
   const urgency = searchParams.get('urgency');

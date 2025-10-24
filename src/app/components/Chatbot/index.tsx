@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 "use client";
+import emailjs from "@emailjs/browser";
 import { useEffect, useState } from "react";
 import ChatBot, { Flow, Settings, Styles } from "react-chatbotify";
 
@@ -15,11 +16,36 @@ export default function Chatbot({ embedded }: Props) {
   const [urgency, setUrgency] = useState("");
   const [solution, setSolution] = useState("");
   const [objective, setObjective] = useState("");
+  const [visible, setVisible] = useState(embedded);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 10000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     // foi até objetivo, ou seja, completou o lead.
     if (objective) {
       sendWhats("Novo Lead Completo Gerado");
+
+      emailjs.init({
+        publicKey: "Ow_lR2_DHB6AGumAq",
+      });
+
+      emailjs.send("service_tnouz3j", "template_b7af9qw", {
+        from_name: `Lead Pixelbox`,
+        to_name: "Rafael",
+        message: `
+        Nome: ${name}
+        Telefone: ${phone}
+        Urgência: ${urgency}
+        Solução: ${solution}
+        Objetivo: ${objective}
+        `,
+      });
     }
 
     if (phone && !objective) {
@@ -148,6 +174,17 @@ export default function Chatbot({ embedded }: Props) {
   };
 
   return (
-    <ChatBot styles={embedded ? styles : {}} flow={flow} settings={settings} />
+    <div
+      style={{
+        opacity: visible ? 1 : 0,
+        transition: "opacity 0.5s ease-in-out",
+      }}
+    >
+      <ChatBot
+        styles={embedded ? styles : {}}
+        flow={flow}
+        settings={settings}
+      />
+    </div>
   );
 }
