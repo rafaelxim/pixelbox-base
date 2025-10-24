@@ -2,9 +2,46 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 "use client";
-import ChatBot, { Flow, Settings } from "react-chatbotify";
+import { useEffect, useState } from "react";
+import ChatBot, { Flow, Settings, Styles } from "react-chatbotify";
+import CtaWhats from "../../../../public/images/ctaWhats.png"
 
 export default function Chatbot() {
+  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
+  const [urgency, setUrgency] = useState("");
+  const [solution, setSolution] = useState("");
+  const [objective, setObjective] = useState("");
+
+  useEffect(() => {
+    // foi até objetivo, ou seja, completou o lead.
+    if (objective) {
+      sendWhats("Novo Lead Completo Gerado");
+    }
+
+    if (phone && !objective) {
+      sendWhats("Novo Lead Parcial Gerado");
+    }
+  }, [objective, phone]);
+
+  const sendWhats = async (title: string) => {
+    try {
+      const response = await fetch(
+        `/api/send-message?name=${name}&whatsapp=${phone}&urgency=${urgency}&solution=${solution}&objective=${objective}&title=${title}`
+      );
+      const data = await response.json();
+
+      if (data.success) {
+        return "Obrigado por se cadastrar!";
+      } else {
+        return `Ocorreu um erro ao enviar seu orçamento: ${data.error}`;
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      return "Ocorreu um erro inesperado ao enviar seu orçamento.";
+    }
+  };
+
   const flow: Flow = {
     start: {
       message: "Olá, tudo bem?",
@@ -17,31 +54,95 @@ export default function Chatbot() {
       options: ["Sim, quero receber"],
       path: "ask_name",
       chatDisabled: true,
+      function: () => sendWhats("Cliente iniciou chat"),
     },
 
     ask_name: {
       message:
         "Para isso, precisamos de umas informações rápidas. Qual seu nome?",
       path: "ask_whatsapp",
+      function: (params: any) => setName(params.userInput),
     },
 
     ask_whatsapp: {
       message: (params) =>
         `Olá ${params.userInput}, poderia me informar seu número de WhatsApp (com DDD)?`,
-      path: "end",
+      function: async (params: any) => setPhone(params.userInput),
+      path: "ask_urgency",
     },
-
+    ask_urgency: {
+      message: "Qual a maior urgência do seu projeto hoje?",
+      options: [
+        "Urgente! Preciso de um site/LP para ontem, quero começar o quanto antes",
+        "Planejamento: Estou pesquisando e preciso de um orçamento para planejar a estratégia.",
+        "Dúvida: Preciso tirar dúvidas sobre o processo e valores da Pixel Box.",
+      ],
+      chatDisabled: true,
+      path: "ask_solution",
+      function: async (params: any) => setUrgency(params.userInput),
+    },
+    ask_solution: {
+      message: "Entendido! E qual o tipo de solução digital que você busca?",
+      options: [
+        "Landing Page (Vendas/Leads Rápidos)",
+        "Site Institucional (Completo e Profissional)",
+        "Portal / Sistema Web (Com gestão de dados)",
+        "Redesign (Atualização de um site existente)",
+      ],
+      chatDisabled: true,
+      path: "ask_objective",
+      function: async (params: any) => setSolution(params.userInput),
+    },
+    ask_objective: {
+      message:
+        "Para a gente entregar a melhor estratégia, qual o principal resultado que você espera alcançar?",
+      options: [
+        "Vender Mais",
+        "Ter Mais Autoridade",
+        "Aparecer em 1º (Google/Buscas)",
+        "Gerir Informações",
+      ],
+      chatDisabled: true,
+      path: "end",
+      function: async (params: any) => {
+        setObjective(params.userInput);
+      },
+    },
     end: {
-      function: () => "IMPLEMENTAR_AQUI",
-      message: "Obrigado por se cadastrar",
+      message: (params) =>
+        `Maravilha, ${name}! Com base nas suas respostas, já podemos preparar um orçamento com foco em ${params.userInput} e o cronograma de entrega rápida. Entro em contato com você pelo Whatsapp fornecido, até já!`,
+      chatDisabled: true,
+      path: "end",
     },
   };
 
   const settings: Settings = {
     tooltip: {
-      text: "Quer receber um orçamento personalizado?",
+      text: "Quer um orçamento?",
+    },
+    header: {
+      title: "Rafael",
+      avatar: "/images/avatar.png",
+    },
+
+    chatButton: {
+      icon: "/images/avatar.png",
+    },
+    general: {
+    //   embedded: true,
+      secondaryColor: "#0d5d3a",
     },
   };
 
-  return <ChatBot flow={flow} settings={settings} />;
+  const styles: Styles = {
+    chatWindowStyle: {
+      left: 0,
+      top: 0,
+      width: "100%",
+      height: "100%",
+      position: "fixed",
+    },
+  };
+
+  return <CtaWhats /> <ChatBot  styles={styles} flow={flow} settings={settings} />;
 }

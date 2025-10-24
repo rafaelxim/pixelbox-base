@@ -1,15 +1,27 @@
-
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import twilio from 'twilio';
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   const accountSid = process.env.TWILIO_ACCOUNT_SID;
   const authToken = process.env.TWILIO_AUTH_TOKEN;
   const client = twilio(accountSid, authToken);
 
+  const { searchParams } = new URL(request.url);
+  const name = searchParams.get('name');
+  const whatsapp = searchParams.get('whatsapp');
+  const urgency = searchParams.get('urgency');
+  const solution = searchParams.get('solution');
+  const objective = searchParams.get('objective');
+  const title = searchParams.get('title');
+
+  // if (!name || !whatsapp) {
+  //   return NextResponse.json({ success: false, error: 'Name and WhatsApp number are required.' }, { status: 400 });
+  // }
+
   try {
+    const messageBody = `${title}:\nNome: ${name || '-'}\nWhatsApp: ${whatsapp || '-'}\nUrgência: ${urgency || '-'}\nSolution: ${solution || '-'}\nObjective: ${objective || '-'}`;
     const message = await client.messages.create({
-      body: 'Novo lead gerado',
+      body: messageBody,
       from: process.env.TWILIO_PHONE_NUMBER,
       to: `whatsapp:${process.env.TO_PHONE_NUMBER}` as string
     });
