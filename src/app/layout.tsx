@@ -2,6 +2,7 @@ import { GlobalStateProvider } from "@/context/GlobalStateContext";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
+import Chatbot from "./components/Chatbot";
 import "./globals.scss";
 
 export const metadata: Metadata = {
@@ -51,7 +52,7 @@ fbq('track', 'PageView');`}
       )}
 
       <body className={poppins.className}>
-        <GlobalStateProvider>{children}</GlobalStateProvider>
+        <GlobalStateProvider>{children}<Chatbot embedded={false} /></GlobalStateProvider>
       </body>
     </html>
   );

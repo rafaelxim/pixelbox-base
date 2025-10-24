@@ -4,9 +4,12 @@
 "use client";
 import { useEffect, useState } from "react";
 import ChatBot, { Flow, Settings, Styles } from "react-chatbotify";
-import CtaWhats from "../../../../public/images/ctaWhats.png"
 
-export default function Chatbot() {
+type Props = {
+  embedded: boolean;
+};
+
+export default function Chatbot({ embedded }: Props) {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [urgency, setUrgency] = useState("");
@@ -129,7 +132,7 @@ export default function Chatbot() {
       icon: "/images/avatar.png",
     },
     general: {
-    //   embedded: true,
+      embedded,
       secondaryColor: "#0d5d3a",
     },
   };
@@ -144,5 +147,7 @@ export default function Chatbot() {
     },
   };
 
-  return <CtaWhats /> <ChatBot  styles={styles} flow={flow} settings={settings} />;
+  return (
+    <ChatBot styles={embedded ? styles : {}} flow={flow} settings={settings} />
+  );
 }
