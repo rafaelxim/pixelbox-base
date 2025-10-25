@@ -1,0 +1,7 @@
+Adicione essa declaracao em type definitions
+
+declare global {
+  interface Window {
+    dataLayer: Record<string, any>[];
+  }
+}
