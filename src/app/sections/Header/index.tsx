@@ -70,7 +70,7 @@ const Header: React.FC<Props> = ({ description, title }) => {
           </div>
           <div className={styles.examples}>
             <Image
-              src="/images/sites-examples2.png"
+              src="/images/sites-examples2.webP"
               alt="exemplos"
               height={933}
               width={1119}
