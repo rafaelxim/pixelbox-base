@@ -3,7 +3,7 @@ const DATA = {
     title: "Criação de <span>Landing Page</span>",
     description:
       "Criamos sua Landing Page e fazemos dela uma MÁQUINA de aquisição de clientes!  Landing Pages que irão aumentar sua taxa de conversão e suas suas chances de fechar novos negócios. Tudo isso com um excelente custo-benefício e entregue em 5 dias.",
-    mainImage: "/images/sites-examples.png",
+    mainImage: "/images/sites-examples.webP",
   },
   pains: {
     title: "Você perde oportunidades todos os dias...",
@@ -60,7 +60,7 @@ const DATA = {
       "Os diferenciais que estão fazendo nossa empresa ser um grande sucesso são:",
     subtitle2:
       "Quem nos contrata afirma que vale a pena porque isso proporciona",
-    image: "/images/team.png",
+    image: "/images/team.webP",
   },
 
   testimonials: {

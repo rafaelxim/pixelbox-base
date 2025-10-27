@@ -4,7 +4,7 @@ const DATA = {
       "Tenha uma <span>Landing Page</span> perfeita para ter mais conversão e vendas",
     description:
       "Criamos sua Landing Page e fazemos dela uma MÁQUINA de aquisição de clientes!  Landing Pages que irão aumentar sua taxa de conversão e suas suas chances de fechar novos negócios. Tudo isso com um excelente custo-benefício e entregue em 72 horas.",
-    mainImage: "/images/sites-examples.png",
+    mainImage: "/images/sites-examples.webP",
   },
   pains: {
     title: "Você perde oportunidades todos os dias...",
@@ -27,7 +27,7 @@ const DATA = {
     ],
     description:
       "Criamos landing pages focadas em conversão, utilizando um método exclusivo que maximiza a captação de leads e gera resultados imediatos para o seu negócio.",
-    image: "/images/sectionimgMaps.png",
+    image: "/images/sectionimgMaps.webP",
   },
   portfolio: {
     subtitle: "Projetos que Transformaram Negócios",
@@ -61,7 +61,7 @@ const DATA = {
       "Os diferenciais que estão fazendo nossa empresa ser um grande sucesso são:",
     subtitle2:
       "Quem nos contrata afirma que vale a pena porque isso proporciona",
-    image: "/images/team.png",
+    image: "/images/team.webP",
   },
 
   testimonials: {
