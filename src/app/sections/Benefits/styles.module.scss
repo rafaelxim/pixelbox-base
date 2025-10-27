@@ -44,17 +44,18 @@
 
   &__backExemplo {
     position: absolute;
-    top: 6px;
+    top: 11%;
     left: 14%;
-    right: 13%;
-    bottom: 36%;
+    right: 14%;
+    bottom: 31%;
     overflow: hidden;
 
     img {
-      width: 100%;
       position: relative;
       top: 0;
       transition: top 3s ease-in-out;
+      width: 100%;
+      height: unset;
     }
   }
 
@@ -63,10 +64,10 @@
     position: relative;
     min-height: 40rem;
 
-    > img {
-      object-fit: cover;
-      width: 100%;
-    }
+    //  > img {
+    //   object-fit: cover;
+    //   width: 100%;
+    // }
   }
 
   &__list {
@@ -81,6 +82,19 @@
 
   &__row:hover &__backExemplo img {
     top: -200%;
+  }
+}
+
+@media (width < 1200px) {
+  .benefits {
+    &__backExemplo {
+      position: absolute;
+      top: 18%;
+      left: 14%;
+      right: 14%;
+      bottom: 31%;
+      overflow: hidden;
+    }
   }
 }
 
@@ -99,6 +113,58 @@
     &__examples {
       order: 1;
       min-height: 27rem;
+    }
+
+    &__backExemplo {
+      position: absolute;
+      top: 11px;
+      left: 27%;
+      right: 27%;
+      bottom: 29%;
+      overflow: hidden;
+
+      img {
+        position: relative;
+        top: 0;
+        transition: top 3s ease-in-out;
+        width: 100%;
+        height: unset;
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .benefits {
+    &__backExemplo {
+      position: absolute;
+      left: 19%;
+      right: 19%;
+      bottom: 29%;
+      overflow: hidden;
+
+      img {
+        position: relative;
+        top: 0;
+        transition: top 3s ease-in-out;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (width < 576px) {
+  .benefits {
+    &__backExemplo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+    }
+
+    &__examples > img {
+      display: none;
     }
   }
 }

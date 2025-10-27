@@ -27,7 +27,6 @@ const DATA = {
     ],
     description:
       "Criamos landing pages focadas em conversão, utilizando um método exclusivo que maximiza a captação de leads e gera resultados imediatos para o seu negócio.",
-    image: "/images/sectionimgMaps.png",
   },
   portfolio: {
     subtitle: "Projetos que Transformaram Negócios",

@@ -157,11 +157,11 @@ export default function Chatbot({ embedded }: Props) {
     },
     header: {
       title: "Rafael",
-      avatar: "/images/avatar.png",
+      avatar: "/images/avatar.webP",
     },
 
     chatButton: {
-      icon: "/images/avatar.png",
+      icon: "/images/avatar.webP",
     },
     general: {
       embedded,

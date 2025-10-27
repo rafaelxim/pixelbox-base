@@ -20,7 +20,6 @@ const DATA = {
     items: ["+ Mais Visibilidade", "+ Mais leads(clientes)", "+ Mais vendas"],
     description:
       "Fazemos isso por meio de um site estratégico, utilizando um método exclusivo que permite à sua empresa dominar a atração de clientes no meio digital e alcançar resultados imediatos.",
-    image: "/images/sectionimgMaps.png",
   },
   portfolio: {
     subtitle: "Projetos que Transformaram Negócios",
