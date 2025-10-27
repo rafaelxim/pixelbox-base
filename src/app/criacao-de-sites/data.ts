@@ -1,33 +1,30 @@
 const DATA = {
-  header: {
+  heroVideo: {
     title:
-      "Tenha uma <span>Landing Page</span> perfeita para ter mais conversão e vendas",
+      "Tenha um site profissional, bem-feito e pronto para atrair clientes",
+    subtitle: "Pare de perder vendas",
+  },
+  header: {
+    title: "Criação de <span>Sites Profissionais</span>",
     description:
-      "Criamos sua Landing Page e fazemos dela uma MÁQUINA de aquisição de clientes!  Landing Pages que irão aumentar sua taxa de conversão e suas suas chances de fechar novos negócios. Tudo isso com um excelente custo-benefício e entregue em 72 horas.",
+      "Tenha um site profissional e exclusivo em até 10 dias. Impulsione a visibilidade e a confiança da sua marca. Fale agora com um especialista!",
     mainImage: "/images/sites-examples.png",
   },
   pains: {
-    title: "Você perde oportunidades todos os dias...",
+    title: "Sua empresa...",
     items: [
-      "Sua página não convence e acaba espantando clientes.",
-      "Seus anúncios não convertem porque falta uma página profissional",
-      "Você perde vendas porque ninguém sabe o que você oferece",
-      "Sua marca parece amadora ou parada no tempo",
-      "Não aparece bem no Google e fica atrás da concorrência",
-      "Clientes visitam sua página, mas vão embora sem fazer nada",
+      "Não é encontrada no Google e perde oportunidades de venda",
+      "Não tem site ou está parado e desatualizado",
+      "Não consegue atrair novos clientes todos os dias",
     ],
   },
   benefits: {
-    subTitle: "Imagine sua landing page transformando visitantes em clientes",
+    subTitle: "Imagine sua empresa com uma presença forte na internet",
     title: "Com certeza ela teria...",
-    items: [
-      "+ Mais conversões",
-      "+ Leads qualificados(clientes)",
-      "+ Resultados rápidos",
-    ],
+    items: ["+ Mais Visibilidade", "+ Mais leads(clientes)", "+ Mais vendas"],
     description:
-      "Criamos landing pages focadas em conversão, utilizando um método exclusivo que maximiza a captação de leads e gera resultados imediatos para o seu negócio.",
-    image: "/images/sectionimgMaps.png",
+      "Fazemos isso por meio de um site estratégico, utilizando um método exclusivo que permite à sua empresa dominar a atração de clientes no meio digital e alcançar resultados imediatos.",
+    image: "/images/topranking.png",
   },
   portfolio: {
     subtitle: "Projetos que Transformaram Negócios",
@@ -45,7 +42,7 @@ const DATA = {
   },
 
   advantages: {
-    title: "soluções de marketing comum",
+    title: "criação de sites comum",
     items1: [
       "Atendimento próximo e humanizado",
       "Conhecimento profundo sobre cada cliente",
@@ -71,75 +68,76 @@ const DATA = {
     text2:
       "Por isso, valorizamos cada feedback que recebemos e estamos sempre buscando melhorar nosso atendimento e serviços.",
   },
- strategy: {
-    subtitle: "Só uma landing page não basta",
-    title: "É preciso estratégia para converter mais",
+  strategy: {
+    subtitle: "Só um site não basta",
+    title: "É preciso estratégia para vender mais",
     text1:
-      "Para ter uma Landing Page de Alta conversão você precisa contar com textos persuasivos, CTA bem definido, página responsiva com carregamento rápido, além de várias técnicas de SEO",
-    text2: "Fique tranquilo, cuidamos disso tudo, você só curte o resultado!",
+      "Ter um site bonito e profissional não é o suficiente. Você precisa de um site estratégico, que atue como uma máquina de atração e conversão de clientes.",
+    text2:
+      "Fale conosco e descubra como transformar seu site em uma ferramenta poderosa de vendas com uma estratégia eficaz e resultados reais!",
   },
   pillars: {
     subtitle: "Atuamos",
     title: "em 3 pilares",
     cards: [
       {
-        title: "Design Personalizado",
+        title: "Criação de Sites",
         image: "/icons/website.svg",
         description:
-          "Criamos layouts únicos que refletem a identidade da sua marca. Focamos em um design intuitivo (UI/UX) para oferecer a melhor experiência ao usuário, guiando-o de forma clara e incentivando a conversão",
+          "Desenvolvemos sites personalizados, prontos e totalmente configurados. Um site estratégico, otimizado com técnicas de SEO (para buscadores) e conteúdo voltado para alta conversão.",
       },
       {
-        title: "Otimização SEO",
+        title: "Estratégia Digital",
         image: "/icons/strategy.svg",
         description:
-          "Desenvolvemos sites robustos, rápidos e seguros. Cada página é construída com código limpo e otimizada com as principais técnicas de SEO para que seu negócio seja encontrado facilmente no Google",
+          "Tudo começa com uma boa estratégia. Criamos funis de vendas alinhados à jornada do cliente, garantindo um marketing eficiente que gera resultados reais e vendas consistentes.",
       },
       {
-        title: "Performance",
-        image: "/icons/website.svg",
+        title: "Tráfego",
+        image: "/icons/strategy.svg",
         description:
-          "Entregamos seu site pronto, configurado e 100% responsivo, funcionando perfeitamente em computadores, tablets e celulares. Uma plataforma profissional projetada para gerar resultados e fortalecer sua presença online",
+          "Trabalhamos com Google Meu Negócio e redes sociais de forma orgânica, além de potencializar os resultados com Google Ads e Meta Ads, sempre com estratégias adaptadas à sua empresa.",
       },
     ],
   },
   facilities: {
-    subtitle: "Landing Pages de alto desempenho",
-    title: "e personalizadas em 5 dias",
+    subtitle: "Sites de alto desempenho",
+    title: "e personalizados em 10 dias",
     cards: [
       {
-        title: "Página Responsiva",
+        title: "Site Responsivo",
         description:
-          "Desenvolvemos landing pages que se ajustam perfeitamente a computadores, tablets e smartphones, oferecendo uma experiência otimizada para seus visitantes.",
+          "Criamos sites que se ajustam perfeitamente a computadores, tablets e smartphones, garantindo a melhor experiência para o usuário.",
         image: "/icons/responsivo.svg",
       },
       {
         title: "SEO otimizado",
         description:
-          "Criamos landing pages com técnicas de SEO avançadas para garantir que sua página apareça nos primeiros resultados dos motores de busca.",
+          "Desenvolvemos sites com técnicas de SEO avançadas para assegurar um excelente posicionamento nos motores de busca.",
         image: "/icons/google.svg",
       },
       {
         title: "Layout sob medida",
         description:
-          "Desenhamos a landing page com base na identidade visual da sua marca, criando um design atrativo e eficaz para conversões.",
+          "Elaboramos o design do site alinhado à identidade visual da sua marca, pensando em cada detalhe.",
         image: "/icons/layout.svg",
       },
       {
         title: "Atendimento próximo",
         description:
-          "Oferecemos suporte dedicado via WhatsApp ou videochamada para tirar dúvidas e atender a todas as suas necessidades durante o processo.",
+          "Disponibilizamos suporte dedicado via WhatsApp ou videochamada para esclarecer dúvidas e atender necessidades.",
         image: "/icons/atendimento.svg",
       },
       {
-        title: "Aumento de conversões",
+        title: "Impulsione seus acessos",
         description:
-          "Utilizamos estratégias para aumentar as conversões da sua landing page, integrando-a às principais ferramentas de marketing digital.",
+          "Integramos seu site às principais ferramentas de tráfego pago e orgânico para aumentar a visibilidade da sua empresa.",
         image: "/icons/impulsao.svg",
       },
       {
         title: "Manutenção contínua",
         description:
-          "Mantemos sua landing page sempre otimizada e funcionando perfeitamente, oferecendo suporte técnico para ajustes e melhorias quando necessário.",
+          "Garantimos que seu site esteja sempre atualizado e funcionando perfeitamente, com suporte técnico disponível para ajustes e melhorias quando necessário.",
         image: "/icons/manutencao.svg",
       },
     ],

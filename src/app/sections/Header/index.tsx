@@ -77,7 +77,7 @@ const Header: React.FC<Props> = ({ description, title }) => {
               data-aos="fade-in"
             />
             <Image
-              src="/images/sites-examples1.webP"
+              src="/images/sites-examples1.png"
               alt="exemplos"
               height={933}
               width={1119}
@@ -85,7 +85,7 @@ const Header: React.FC<Props> = ({ description, title }) => {
               data-aos-delay="300"
             />
             <Image
-              src="/images/sites-examples3.webP"
+              src="/images/sites-examples3.png"
               alt="exemplos"
               height={933}
               width={1119}

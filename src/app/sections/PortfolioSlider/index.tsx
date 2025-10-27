@@ -39,7 +39,7 @@ const PortfolioSlider = () => {
             width={400}
             height={711}
             alt="art"
-            src="/images/cafe-art.webP"
+            src="/images/cafe-art.png"
           />
         </SwiperSlide>
 
@@ -48,15 +48,15 @@ const PortfolioSlider = () => {
             width={400}
             height={711}
             alt="art"
-            src="/images/autox_art.webP"
+            src="/images/autox_art.png"
           />
         </SwiperSlide>
 
         <SwiperSlide>
-          <Image width={400} height={711} alt="art" src="/images/barber.webP" />
+          <Image width={400} height={711} alt="art" src="/images/barber.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image width={400} height={711} alt="art" src="/images/cidade.webP" />
+          <Image width={400} height={711} alt="art" src="/images/cidade.png" />
         </SwiperSlide>
       </Swiper>
     </section>

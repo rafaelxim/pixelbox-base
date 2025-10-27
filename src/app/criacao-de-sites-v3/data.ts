@@ -4,7 +4,7 @@ const DATA = {
       "Tenha um <span>site profissional</span>, bem-feito e pronto para atrair clientes",
     description:
       "Site finalizado em até 10 dias. Impulsione a visibilidade e a confiança da sua marca. Fale agora com um especialista!",
-    mainImage: "/images/sites-examples.webP",
+    mainImage: "/images/sites-examples.png",
   },
   pains: {
     title: "Sua empresa...",
@@ -20,7 +20,7 @@ const DATA = {
     items: ["+ Mais Visibilidade", "+ Mais leads(clientes)", "+ Mais vendas"],
     description:
       "Fazemos isso por meio de um site estratégico, utilizando um método exclusivo que permite à sua empresa dominar a atração de clientes no meio digital e alcançar resultados imediatos.",
-    image: "/images/sectionimgMaps.webP",
+    image: "/images/sectionimgMaps.png",
   },
   portfolio: {
     subtitle: "Projetos que Transformaram Negócios",
@@ -54,7 +54,7 @@ const DATA = {
       "Os diferenciais que estão fazendo nossa empresa ser um grande sucesso são:",
     subtitle2:
       "Quem nos contrata afirma que vale a pena porque isso proporciona",
-    image: "/images/team.webP",
+    image: "/images/team.png",
   },
 
   testimonials: {

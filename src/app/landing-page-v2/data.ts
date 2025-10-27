@@ -3,7 +3,7 @@ const DATA = {
     title: "Chega de Perder <span>Tempo</span> com Ferramentas Complicadas!",
     description:
       "Receba sua Landing Page pronta, configurada e personalizada em 5 dias, sem enrolação e sem os problemas dos construtores tradicionais.",
-    mainImage: "/images/sites-examples.webP",
+    mainImage: "/images/sites-examples.png",
   },
   pains: {
     title: "Você perde oportunidades todos os dias...",
@@ -60,7 +60,7 @@ const DATA = {
       "Os diferenciais que estão fazendo nossa empresa ser um grande sucesso são:",
     subtitle2:
       "Quem nos contrata afirma que vale a pena porque isso proporciona",
-    image: "/images/team.webP",
+    image: "/images/team.png",
   },
 
   testimonials: {
