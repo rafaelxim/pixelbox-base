@@ -50,6 +50,13 @@ export default function Chatbot({ embedded }: Props) {
 
     if (phone && !objective) {
       sendWhats("Novo Lead Parcial Gerado");
+
+      // @ts-ignore
+      if (typeof window !== "undefined" && typeof window.fbq === "function") {
+        // @ts-ignore
+        window.fbq("track", "Lead");
+      }
+
       // @ts-ignore
       window.dataLayer = window.dataLayer || [];
       // @ts-ignore
